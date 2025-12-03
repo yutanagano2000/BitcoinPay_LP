@@ -35,7 +35,7 @@ const items = computed(() => {
       class="gap-1"
       trailing-icon="i-heroicons-chevron-down-20-solid"
     >
-      <UIcon name="i-heroicons-globe-alt" class="w-4 h-4" />
+      <UIcon name="i-heroicons-globe-alt" class="w-[22.4px] h-[22.4px]" />
       <span class="hidden sm:inline">{{ currentLocale?.name }}</span>
     </UButton>
   </UDropdownMenu>

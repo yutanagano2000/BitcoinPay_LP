@@ -1,19 +1,49 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-const isVisible = ref(true);
 const isDismissed = ref(false);
+const isUserActive = ref(true);
+let inactivityTimeout: ReturnType<typeof setTimeout> | null = null;
 
 const dismiss = () => {
   isDismissed.value = true;
-  isVisible.value = false;
 };
 
-// Show banner after a slight delay for better UX
+const handleUserActivity = () => {
+  isUserActive.value = true;
+  
+  if (inactivityTimeout) {
+    clearTimeout(inactivityTimeout);
+  }
+  
+  inactivityTimeout = setTimeout(() => {
+    isUserActive.value = false;
+  }, 1500);
+};
+
 onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = true;
-  }, 1000);
+  // 初期状態では非表示、1.5秒後に表示
+  inactivityTimeout = setTimeout(() => {
+    isUserActive.value = false;
+  }, 1500);
+  
+  // 各種ユーザー操作を監視
+  window.addEventListener('scroll', handleUserActivity, { passive: true });
+  window.addEventListener('mousedown', handleUserActivity, { passive: true });
+  window.addEventListener('touchstart', handleUserActivity, { passive: true });
+  window.addEventListener('keydown', handleUserActivity, { passive: true });
+  window.addEventListener('mousemove', handleUserActivity, { passive: true });
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleUserActivity);
+  window.removeEventListener('mousedown', handleUserActivity);
+  window.removeEventListener('touchstart', handleUserActivity);
+  window.removeEventListener('keydown', handleUserActivity);
+  window.removeEventListener('mousemove', handleUserActivity);
+  if (inactivityTimeout) {
+    clearTimeout(inactivityTimeout);
+  }
 });
 </script>
 
@@ -27,16 +57,13 @@ onMounted(() => {
     leave-to-class="translate-y-full opacity-0"
   >
     <div
-      v-if="isVisible && !isDismissed"
+      v-if="!isDismissed && !isUserActive"
       class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900"
     >
-      <!-- Gradient border top -->
-      <div class="h-[2px] bg-gradient-to-r from-amber-500 via-orange-500 to-amber-400" />
-      
       <!-- Banner content -->
       <div class="bg-gray-900 backdrop-blur-xl border-t border-gray-800 shadow-2xl">
-        <div class="container mx-auto px-4 py-3 safe-area-padding">
-          <div class="flex items-center justify-between gap-4">
+        <div class="container mx-auto px-4 banner-padding safe-area-padding flex items-center" style="min-height: calc(46px + env(safe-area-inset-bottom, 0));">
+          <div class="flex items-center justify-between gap-4 w-full">
             <!-- Close button -->
             <button
               @click="dismiss"
@@ -51,7 +78,7 @@ onMounted(() => {
             <!-- App info -->
             <div class="flex items-center gap-3 flex-1 min-w-0">
               <!-- App icon -->
-              <img src="/images/App_Logo_Radius.png" alt="BitcoinPay" class="flex-shrink-0 w-11 h-11 object-contain" />
+              <img src="/images/App_Logo_Radius.png" alt="BitcoinPay" class="flex-shrink-0 w-8 h-8 object-contain" />
               
               <!-- Text content -->
               <div class="min-w-0 flex-1">
@@ -77,8 +104,13 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.banner-padding {
+  padding-top: calc(0.516375rem + env(safe-area-inset-bottom, 0) / 2);
+  padding-bottom: calc(0.516375rem + env(safe-area-inset-bottom, 0) / 2);
+}
+
 .safe-area-padding {
-  padding-bottom: env(safe-area-inset-bottom, 0);
+  /* Safe area is handled in banner-padding */
 }
 </style>
 
