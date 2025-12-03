@@ -28,14 +28,14 @@ onMounted(() => {
   >
     <div
       v-if="isVisible && !isDismissed"
-      class="fixed bottom-0 left-0 right-0 z-50 safe-area-bottom"
+      class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900"
     >
       <!-- Gradient border top -->
       <div class="h-[2px] bg-gradient-to-r from-amber-500 via-orange-500 to-amber-400" />
       
       <!-- Banner content -->
       <div class="bg-gray-900 backdrop-blur-xl border-t border-gray-800 shadow-2xl">
-        <div class="container mx-auto px-4 py-3">
+        <div class="container mx-auto px-4 py-3 safe-area-padding">
           <div class="flex items-center justify-between gap-4">
             <!-- Close button -->
             <button
@@ -77,7 +77,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.safe-area-bottom {
+.safe-area-padding {
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
 </style>
