@@ -34,16 +34,16 @@ onMounted(() => {
       <div class="h-[2px] bg-gradient-to-r from-amber-500 via-orange-500 to-amber-400" />
       
       <!-- Banner content -->
-      <div class="bg-white backdrop-blur-xl border-t border-gray-100 shadow-2xl">
+      <div class="bg-gray-900 backdrop-blur-xl border-t border-gray-800 shadow-2xl">
         <div class="container mx-auto px-4 py-3">
           <div class="flex items-center justify-between gap-4">
             <!-- Close button -->
             <button
               @click="dismiss"
-              class="flex-shrink-0 p-1.5 rounded-full hover:bg-gray-100 transition-colors"
+              class="flex-shrink-0 p-1.5 rounded-full hover:bg-gray-800 transition-colors"
               aria-label="Close banner"
             >
-              <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -51,14 +51,12 @@ onMounted(() => {
             <!-- App info -->
             <div class="flex items-center gap-3 flex-1 min-w-0">
               <!-- App icon -->
-              <div class="flex-shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center shadow-lg ring-1 ring-gray-200">
-                <img src="/images/logo/logo-symbol.svg" alt="BitcoinPay" class="w-7 h-7" />
-              </div>
+              <img src="/images/App_Logo_Radius.png" alt="BitcoinPay" class="flex-shrink-0 w-11 h-11 object-contain" />
               
               <!-- Text content -->
               <div class="min-w-0 flex-1">
-                <h3 class="text-gray-900 font-bold text-sm truncate">BitcoinPay</h3>
-                <p class="text-gray-500 text-xs truncate">{{ t('downloadBanner.tagline') }}</p>
+                <h3 class="text-white font-bold text-sm truncate">BitcoinPay</h3>
+                <p class="text-gray-400 text-xs truncate">{{ t('downloadBanner.tagline') }}</p>
               </div>
             </div>
 
