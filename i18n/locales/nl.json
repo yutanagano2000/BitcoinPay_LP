@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Crypto voor dagelijkse betalingen",
+    "description": "Virtuele creditcard aangedreven door USDC/USDT. Gebruik crypto voor dagelijkse betalingen met Apple Pay en Google Pay."
+  },
+  "nav": {
+    "about": "Over ons",
+    "features": "Functies",
+    "currencies": "Valuta's",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Crypto voor dagelijkse betalingen",
+    "subtitle": "Virtuele creditcard aangedreven door USDC/USDT",
+    "description": "Betaal in winkels, online shops en overal waar Apple Pay of Google Pay wordt geaccepteerd - allemaal met je crypto.",
+    "cta": "Schrijf je in voor de wachtlijst",
+    "comingSoon": "Binnenkort beschikbaar",
+    "badges": {
+      "selfCustody": "Zelfbewaring",
+      "instant": "Direct",
+      "global": "Wereldwijd"
+    },
+    "balance": "Saldo"
+  },
+  "about": {
+    "title": "Wat is BitcoinPay?",
+    "subtitle": "Een nieuwe manier om je crypto uit te geven",
+    "description": "BitcoinPay is een virtuele creditcard waarmee je USDC/USDT direct in het dagelijks leven kunt uitgeven. Geen bankrekening nodig.",
+    "features": {
+      "instant": {
+        "title": "Directe kaartuitgifte",
+        "description": "Ontvang je virtuele kaart direct na identiteitsverificatie"
+      },
+      "wallet": {
+        "title": "Apple Pay & Google Pay",
+        "description": "Voeg je kaart toe aan je mobiele portemonnee en betaal overal"
+      },
+      "custody": {
+        "title": "Zelfbewaring",
+        "description": "Je activa blijven altijd onder jouw controle"
+      },
+      "noBank": {
+        "title": "Geen bankrekening",
+        "description": "Leef zonder afhankelijkheid van traditionele banksystemen"
+      }
+    }
+  },
+  "features": {
+    "title": "Functies",
+    "subtitle": "Alles wat je nodig hebt om crypto uit te geven",
+    "list": {
+      "virtualCard": {
+        "title": "Virtuele kaart",
+        "description": "Direct uitgegeven digitale kaart klaar voor gebruik"
+      },
+      "physicalCard": {
+        "title": "Fysieke kaart",
+        "description": "Binnenkort - een echte kaart voor persoonlijke betalingen"
+      },
+      "multiCurrency": {
+        "title": "Multi-valuta",
+        "description": "Ondersteuning voor USDC, USDT en meer valuta's binnenkort"
+      },
+      "globalPayments": {
+        "title": "Wereldwijde betalingen",
+        "description": "Gebruik je kaart overal waar Visa/Mastercard wordt geaccepteerd"
+      },
+      "lowFees": {
+        "title": "Lage kosten",
+        "description": "Concurrerende tarieven voor al je transacties"
+      },
+      "security": {
+        "title": "Bankbeveiliging",
+        "description": "Je geld wordt beschermd met enterprise-grade beveiliging"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Ondersteunde valuta's",
+    "subtitle": "Begin met stablecoins, breid uit naar meer",
+    "current": "Momenteel ondersteund",
+    "coming": "Binnenkort",
+    "stablecoin": "Stablecoin"
+  },
+  "howItWorks": {
+    "title": "Hoe het werkt",
+    "subtitle": "Begin in enkele minuten",
+    "steps": {
+      "download": {
+        "title": "Download de app",
+        "description": "Download BitcoinPay uit de App Store of Google Play"
+      },
+      "verify": {
+        "title": "Verifieer identiteit",
+        "description": "Voltooi KYC met je door de overheid uitgegeven ID"
+      },
+      "issue": {
+        "title": "Ontvang je kaart",
+        "description": "Je virtuele kaart wordt direct uitgegeven"
+      },
+      "addWallet": {
+        "title": "Voeg toe aan portemonnee",
+        "description": "Voeg je kaart toe aan Apple Pay of Google Pay"
+      },
+      "spend": {
+        "title": "Begin met uitgeven",
+        "description": "Gebruik je crypto overal waar kaarten worden geaccepteerd"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Veelgestelde vragen",
+    "items": {
+      "howToStart": {
+        "question": "Hoe kan ik BitcoinPay gaan gebruiken?",
+        "answer": "Na het voltooien van identiteitsverificatie met een door de overheid uitgegeven ID van je land van verblijf, wordt je kaart direct uitgegeven."
+      },
+      "cost": {
+        "question": "Hoeveel kost het om een account te openen?",
+        "answer": "Het aanmaken van een account is volledig gratis."
+      },
+      "tax": {
+        "question": "Is er een belastingberekeningsfunctie?",
+        "answer": "Momenteel is deze functie niet beschikbaar. We zijn echter van plan om belastingverwerkingsfuncties toe te voegen die zijn afgestemd op het belastingstelsel van elk land in toekomstige updates."
+      },
+      "currencies": {
+        "question": "Welke cryptocurrencies worden ondersteund?",
+        "answer": "Momenteel ondersteunen we USDC en USDT. We zijn van plan om ondersteuning voor Bitcoin SV, ETH, Solana, MATIC en BSC in de toekomst toe te voegen."
+      },
+      "security": {
+        "question": "Hoe veilig is BitcoinPay?",
+        "answer": "We gebruiken beveiligingsmaatregelen op enterprise-niveau om je geld en persoonlijke informatie te beschermen. Je activa blijven in zelfbewaring."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Schrijf je in voor de wachtlijst",
+    "subtitle": "Wees de eerste die weet wanneer we lanceren",
+    "placeholder": "Voer je e-mail in",
+    "button": "Inschrijven",
+    "success": "Bedankt voor je inschrijving! We nemen binnenkort contact op.",
+    "error": "Er ging iets mis. Probeer het opnieuw."
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "subtitle": "We zijn er om te helpen",
+    "personal": {
+      "title": "Persoonlijke vragen",
+      "description": "Voor individuele gebruikers",
+      "button": "Contact support"
+    },
+    "business": {
+      "title": "Zakelijke vragen",
+      "description": "Voor partnerschappen en bedrijven",
+      "button": "Contact verkoop"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Persoonlijke ondersteuning",
+      "name": "Naam",
+      "email": "E-mail",
+      "subject": "Onderwerp",
+      "message": "Bericht",
+      "submit": "Bericht versturen",
+      "subjects": {
+        "general": "Algemene vraag",
+        "account": "Accountproblemen",
+        "payment": "Betalingsproblemen",
+        "other": "Anders"
+      }
+    },
+    "business": {
+      "title": "Zakelijke aanvraag",
+      "companyName": "Bedrijfsnaam",
+      "department": "Afdeling",
+      "name": "Contactnaam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "inquiryType": "Type aanvraag",
+      "message": "Bericht",
+      "submit": "Aanvraag versturen",
+      "types": {
+        "partnership": "Partnerschap",
+        "integration": "API-integratie",
+        "enterprise": "Enterprise-oplossingen",
+        "other": "Anders"
+      }
+    },
+    "success": "Je bericht is succesvol verzonden.",
+    "error": "Verzenden mislukt. Probeer het opnieuw.",
+    "validation": {
+      "emailRequired": "E-mailadres is verplicht",
+      "emailInvalid": "Voer een geldig e-mailadres in",
+      "nameRequired": "Naam is verplicht"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Links",
+      "download": "Download"
+    },
+    "links": {
+      "terms": "Servicevoorwaarden",
+      "privacy": "Privacybeleid"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Alle rechten voorbehouden."
+  },
+  "common": {
+    "comingSoon": "Binnenkort",
+    "learnMore": "Meer informatie",
+    "getStarted": "Aan de slag",
+    "backToHome": "Terug naar home",
+    "downloadOn": "Download op",
+    "getItOn": "Verkrijgbaar op"
+  },
+  "terms": {
+    "lastUpdated": "Laatst bijgewerkt: December 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Aanvaarding van de voorwaarden",
+        "content": "Door toegang te krijgen tot en gebruik te maken van BitcoinPay-diensten, aanvaardt u en gaat u akkoord met de voorwaarden en bepalingen van deze overeenkomst."
+      },
+      "description": {
+        "title": "2. Beschrijving van de dienst",
+        "content": "BitcoinPay biedt een virtuele creditcarddienst waarmee gebruikers cryptocurrency (USDC/USDT) kunnen uitgeven voor dagelijkse aankopen via Apple Pay en Google Pay."
+      },
+      "eligibility": {
+        "title": "3. Gebruikersvereisten",
+        "content": "U moet minstens 18 jaar oud zijn en in staat zijn om een bindend contract aan te gaan om onze diensten te gebruiken. U moet identiteitsverificatie (KYC) voltooien voordat u toegang krijgt tot kaartdiensten."
+      },
+      "responsibilities": {
+        "title": "4. Gebruikersverantwoordelijkheden",
+        "items": [
+          "Geef nauwkeurige en volledige informatie tijdens registratie",
+          "Houd de beveiliging van uw accountgegevens bij",
+          "Voldoe aan alle toepasselijke wetten en regelgeving",
+          "Gebruik de dienst niet voor illegale of ongeautoriseerde doeleinden"
+        ]
+      },
+      "fees": {
+        "title": "5. Kosten en tarieven",
+        "content": "Het aanmaken van een account is gratis. Transactiekosten en andere kosten kunnen van toepassing zijn en worden bekendgemaakt voordat een transactie wordt voltooid."
+      },
+      "liability": {
+        "title": "6. Beperking van aansprakelijkheid",
+        "content": "BitcoinPay is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of punitieve schade die voortvloeit uit uw gebruik van de dienst."
+      },
+      "changes": {
+        "title": "7. Wijzigingen in de voorwaarden",
+        "content": "We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Gebruikers worden op de hoogte gesteld van materiële wijzigingen."
+      },
+      "contact": {
+        "title": "8. Contactinformatie",
+        "content": "Voor vragen over deze Servicevoorwaarden kunt u contact met ons opnemen via ons contactformulier."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Laatst bijgewerkt: December 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Informatie die we verzamelen",
+        "content": "We verzamelen informatie die u direct aan ons verstrekt, waaronder:",
+        "items": [
+          "Persoonlijke identificatie-informatie (naam, e-mailadres, telefoonnummer)",
+          "Door de overheid uitgegeven identiteitsdocumenten voor KYC-verificatie",
+          "Transactie- en betalingsinformatie",
+          "Apparaat- en gebruiksinformatie"
+        ]
+      },
+      "usage": {
+        "title": "2. Hoe we uw informatie gebruiken",
+        "content": "We gebruiken de informatie die we verzamelen om:",
+        "items": [
+          "Onze diensten te leveren, te onderhouden en te verbeteren",
+          "Transacties te verwerken en gerelateerde informatie te verzenden",
+          "Uw identiteit te verifiëren en fraude te voorkomen",
+          "Te voldoen aan wettelijke verplichtingen",
+          "Met u te communiceren over producten, diensten en evenementen"
+        ]
+      },
+      "sharing": {
+        "title": "3. Delen van informatie",
+        "content": "We verkopen uw persoonlijke informatie niet. We kunnen uw informatie delen met:",
+        "items": [
+          "Dienstverleners die helpen bij onze activiteiten",
+          "Regelgevende autoriteiten wanneer wettelijk vereist",
+          "Partners met uw toestemming"
+        ]
+      },
+      "security": {
+        "title": "4. Gegevensbeveiliging",
+        "content": "We implementeren passende technische en organisatorische maatregelen om uw persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging."
+      },
+      "rights": {
+        "title": "5. Uw rechten",
+        "content": "U heeft het recht om:",
+        "items": [
+          "Toegang te krijgen tot uw persoonlijke informatie",
+          "Onjuiste gegevens te corrigeren",
+          "Verwijdering van uw gegevens aan te vragen",
+          "Bezwaar te maken tegen de verwerking van uw gegevens",
+          "Gegevensportabiliteit"
+        ]
+      },
+      "retention": {
+        "title": "6. Gegevensbewaring",
+        "content": "We bewaren uw persoonlijke informatie zolang als nodig is om de doeleinden waarvoor deze is verzameld te vervullen en om te voldoen aan wettelijke verplichtingen."
+      },
+      "cookies": {
+        "title": "7. Cookies en tracking",
+        "content": "We gebruiken cookies en vergelijkbare technologieën om informatie over uw surfgedrag te verzamelen en u een betere ervaring te bieden."
+      },
+      "policyChanges": {
+        "title": "8. Wijzigingen in dit beleid",
+        "content": "We kunnen dit privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte stellen van materiële wijzigingen door het nieuwe beleid op deze pagina te plaatsen."
+      },
+      "contact": {
+        "title": "9. Neem contact met ons op",
+        "content": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op via ons contactformulier."
+      }
+    }
+  }
+}

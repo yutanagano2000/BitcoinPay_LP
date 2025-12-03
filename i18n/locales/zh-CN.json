@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - 加密货币日常支付",
+    "description": "USDC/USDT驱动的虚拟信用卡。使用Apple Pay和Google Pay进行日常加密货币支付。"
+  },
+  "nav": {
+    "about": "关于",
+    "features": "功能",
+    "currencies": "货币",
+    "faq": "常见问题",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "加密货币日常支付",
+    "subtitle": "USDC/USDT驱动的虚拟信用卡",
+    "description": "在便利店、网上商店以及任何接受Apple Pay或Google Pay的地方支付 - 全部使用您的加密货币。",
+    "cta": "加入等候名单",
+    "comingSoon": "即将推出",
+    "badges": {
+      "selfCustody": "自主托管",
+      "instant": "即时",
+      "global": "全球"
+    },
+    "balance": "余额"
+  },
+  "about": {
+    "title": "什么是BitcoinPay？",
+    "subtitle": "消费加密货币的新方式",
+    "description": "BitcoinPay是一张虚拟信用卡，让您可以在日常生活中直接消费USDC/USDT。无需银行账户。",
+    "features": {
+      "instant": {
+        "title": "即时发卡",
+        "description": "身份验证完成后立即获得您的虚拟卡"
+      },
+      "wallet": {
+        "title": "Apple Pay和Google Pay",
+        "description": "将您的卡添加到移动钱包，随时随地支付"
+      },
+      "custody": {
+        "title": "自主托管",
+        "description": "您的资产始终在您的控制之下"
+      },
+      "noBank": {
+        "title": "无需银行账户",
+        "description": "不依赖传统银行系统生活"
+      }
+    }
+  },
+  "features": {
+    "title": "功能",
+    "subtitle": "消费加密货币所需的一切",
+    "list": {
+      "virtualCard": {
+        "title": "虚拟卡",
+        "description": "即时发行的数字卡，立即可用"
+      },
+      "physicalCard": {
+        "title": "实体卡",
+        "description": "即将推出 - 用于线下支付的实体卡"
+      },
+      "multiCurrency": {
+        "title": "多币种",
+        "description": "支持USDC、USDT，更多币种即将推出"
+      },
+      "globalPayments": {
+        "title": "全球支付",
+        "description": "在任何接受Visa/Mastercard的地方使用您的卡"
+      },
+      "lowFees": {
+        "title": "低手续费",
+        "description": "所有交易享有竞争力的费率"
+      },
+      "security": {
+        "title": "银行级安全",
+        "description": "您的资金受到企业级安全保护"
+      }
+    }
+  },
+  "currencies": {
+    "title": "支持的货币",
+    "subtitle": "从稳定币开始，扩展到更多",
+    "current": "当前支持",
+    "coming": "即将推出",
+    "stablecoin": "稳定币"
+  },
+  "howItWorks": {
+    "title": "如何运作",
+    "subtitle": "几分钟内即可开始",
+    "steps": {
+      "download": {
+        "title": "下载应用",
+        "description": "从App Store或Google Play获取BitcoinPay"
+      },
+      "verify": {
+        "title": "身份验证",
+        "description": "使用政府颁发的身份证件完成KYC"
+      },
+      "issue": {
+        "title": "获取您的卡",
+        "description": "您的虚拟卡即时发行"
+      },
+      "addWallet": {
+        "title": "添加到钱包",
+        "description": "将您的卡添加到Apple Pay或Google Pay"
+      },
+      "spend": {
+        "title": "开始消费",
+        "description": "在任何接受卡片的地方使用您的加密货币"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "常见问题解答",
+    "items": {
+      "howToStart": {
+        "question": "如何开始使用BitcoinPay？",
+        "answer": "使用您居住国的政府颁发身份证件完成身份验证后，您的卡将立即发行。"
+      },
+      "cost": {
+        "question": "开户需要多少费用？",
+        "answer": "开户完全免费。"
+      },
+      "tax": {
+        "question": "有税务计算功能吗？",
+        "answer": "目前该功能不可用。但是，我们计划在未来的更新中实施适合各国税务系统的税务处理功能。"
+      },
+      "currencies": {
+        "question": "支持哪些加密货币？",
+        "answer": "目前我们支持USDC和USDT。我们计划在未来添加对Bitcoin SV、ETH、Solana、MATIC和BSC的支持。"
+      },
+      "security": {
+        "question": "BitcoinPay安全吗？",
+        "answer": "我们使用企业级安全措施来保护您的资金和个人信息。您的资产保持自主托管。"
+      }
+    }
+  },
+  "waitlist": {
+    "title": "加入等候名单",
+    "subtitle": "第一时间获知我们的发布消息",
+    "placeholder": "输入您的邮箱",
+    "button": "加入等候名单",
+    "success": "感谢您的加入！我们将尽快与您联系。",
+    "error": "出了点问题。请重试。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们随时为您提供帮助",
+    "personal": {
+      "title": "个人咨询",
+      "description": "面向个人用户",
+      "button": "联系客服"
+    },
+    "business": {
+      "title": "商业咨询",
+      "description": "面向合作伙伴和企业",
+      "button": "联系销售"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "个人支持",
+      "name": "姓名",
+      "email": "邮箱",
+      "subject": "主题",
+      "message": "留言",
+      "submit": "发送消息",
+      "subjects": {
+        "general": "一般咨询",
+        "account": "账户问题",
+        "payment": "支付问题",
+        "other": "其他"
+      }
+    },
+    "business": {
+      "title": "商业咨询",
+      "companyName": "公司名称",
+      "department": "部门",
+      "name": "联系人姓名",
+      "email": "邮箱",
+      "phone": "电话",
+      "inquiryType": "咨询类型",
+      "message": "留言",
+      "submit": "发送咨询",
+      "types": {
+        "partnership": "合作伙伴",
+        "integration": "API集成",
+        "enterprise": "企业解决方案",
+        "other": "其他"
+      }
+    },
+    "success": "您的消息已成功发送。",
+    "error": "消息发送失败。请重试。",
+    "validation": {
+      "emailRequired": "电子邮件地址是必填项",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "nameRequired": "姓名是必填项"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "链接",
+      "download": "下载"
+    },
+    "links": {
+      "terms": "服务条款",
+      "privacy": "隐私政策"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "版权所有。"
+  },
+  "common": {
+    "comingSoon": "即将推出",
+    "learnMore": "了解更多",
+    "getStarted": "开始使用",
+    "backToHome": "返回首页",
+    "downloadOn": "下载于",
+    "getItOn": "获取于"
+  },
+  "terms": {
+    "lastUpdated": "最后更新：2024年12月",
+    "sections": {
+      "acceptance": {
+        "title": "1. 条款接受",
+        "content": "通过访问和使用BitcoinPay服务，您接受并同意受本协议条款和规定的约束。"
+      },
+      "description": {
+        "title": "2. 服务说明",
+        "content": "BitcoinPay提供虚拟信用卡服务，允许用户通过Apple Pay和Google Pay使用加密货币（USDC/USDT）进行日常购物。"
+      },
+      "eligibility": {
+        "title": "3. 用户资格",
+        "content": "您必须年满18岁并能够签订具有约束力的合同才能使用我们的服务。在访问卡服务之前，您必须完成身份验证（KYC）。"
+      },
+      "responsibilities": {
+        "title": "4. 用户责任",
+        "items": [
+          "在注册期间提供准确和完整的信息",
+          "维护账户凭证的安全",
+          "遵守所有适用的法律法规",
+          "不将服务用于任何非法或未经授权的目的"
+        ]
+      },
+      "fees": {
+        "title": "5. 费用和收费",
+        "content": "账户创建完全免费。可能会收取交易费用和其他费用，这些费用将在完成任何交易之前披露。"
+      },
+      "liability": {
+        "title": "6. 责任限制",
+        "content": "BitcoinPay对因您使用服务而产生的任何间接、附带、特殊、后果性或惩罚性损害不承担责任。"
+      },
+      "changes": {
+        "title": "7. 条款变更",
+        "content": "我们保留随时修改这些条款的权利。用户将被通知任何重大变更。"
+      },
+      "contact": {
+        "title": "8. 联系信息",
+        "content": "如对这些服务条款有任何疑问，请通过我们的联系表格与我们联系。"
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "最后更新：2024年12月",
+    "sections": {
+      "collection": {
+        "title": "1. 我们收集的信息",
+        "content": "我们收集您直接向我们提供的信息，包括：",
+        "items": [
+          "个人身份信息（姓名、电子邮件地址、电话号码）",
+          "用于KYC验证的政府颁发的身份证件",
+          "交易和支付信息",
+          "设备和使用信息"
+        ]
+      },
+      "usage": {
+        "title": "2. 我们如何使用您的信息",
+        "content": "我们使用收集的信息来：",
+        "items": [
+          "提供、维护和改进我们的服务",
+          "处理交易并发送相关信息",
+          "验证您的身份并防止欺诈",
+          "遵守法律义务",
+          "与您沟通有关产品、服务和活动的信息"
+        ]
+      },
+      "sharing": {
+        "title": "3. 信息共享",
+        "content": "我们不会出售您的个人信息。我们可能会与以下对象共享您的信息：",
+        "items": [
+          "协助我们运营的服务提供商",
+          "法律要求时的监管机构",
+          "经您同意的合作伙伴"
+        ]
+      },
+      "security": {
+        "title": "4. 数据安全",
+        "content": "我们实施适当的技术和组织措施，以保护您的个人信息免遭未经授权的访问、更改、披露或销毁。"
+      },
+      "rights": {
+        "title": "5. 您的权利",
+        "content": "您有权：",
+        "items": [
+          "访问您的个人信息",
+          "更正不准确的数据",
+          "请求删除您的数据",
+          "反对处理您的数据",
+          "数据可携性"
+        ]
+      },
+      "retention": {
+        "title": "6. 数据保留",
+        "content": "我们会保留您的个人信息，只要有必要实现收集信息的目的并遵守法律义务。"
+      },
+      "cookies": {
+        "title": "7. Cookie和跟踪",
+        "content": "我们使用Cookie和类似技术来收集有关您浏览活动的信息，并为您提供更好的体验。"
+      },
+      "policyChanges": {
+        "title": "8. 本政策的变更",
+        "content": "我们可能会不时更新本隐私政策。我们将通过在本页面发布新政策来通知您任何重大变更。"
+      },
+      "contact": {
+        "title": "9. 联系我们",
+        "content": "如果您对本隐私政策有任何疑问，请通过我们的联系表格与我们联系。"
+      }
+    }
+  }
+}

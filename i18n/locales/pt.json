@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Crypto para pagamentos do dia a dia",
+    "description": "Cartão de crédito virtual com USDC/USDT. Use crypto para pagamentos diários com Apple Pay e Google Pay."
+  },
+  "nav": {
+    "about": "Sobre",
+    "features": "Recursos",
+    "currencies": "Moedas",
+    "faq": "FAQ",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Crypto para pagamentos do dia a dia",
+    "subtitle": "Cartão de crédito virtual com USDC/USDT",
+    "description": "Pague em lojas, e-commerces e em qualquer lugar que aceite Apple Pay ou Google Pay - tudo com sua crypto.",
+    "cta": "Entrar na lista de espera",
+    "comingSoon": "Em breve",
+    "badges": {
+      "selfCustody": "Auto-custódia",
+      "instant": "Instantâneo",
+      "global": "Global"
+    },
+    "balance": "Saldo"
+  },
+  "about": {
+    "title": "O que é BitcoinPay?",
+    "subtitle": "Uma nova forma de gastar sua crypto",
+    "description": "BitcoinPay é um cartão de crédito virtual que permite gastar USDC/USDT diretamente no seu dia a dia. Sem necessidade de conta bancária.",
+    "features": {
+      "instant": {
+        "title": "Emissão instantânea do cartão",
+        "description": "Receba seu cartão virtual imediatamente após a verificação de identidade"
+      },
+      "wallet": {
+        "title": "Apple Pay e Google Pay",
+        "description": "Adicione seu cartão à carteira móvel e pague em qualquer lugar"
+      },
+      "custody": {
+        "title": "Auto-custódia",
+        "description": "Seus ativos permanecem sob seu controle o tempo todo"
+      },
+      "noBank": {
+        "title": "Sem conta bancária",
+        "description": "Viva sem depender dos sistemas bancários tradicionais"
+      }
+    }
+  },
+  "features": {
+    "title": "Recursos",
+    "subtitle": "Tudo que você precisa para gastar crypto",
+    "list": {
+      "virtualCard": {
+        "title": "Cartão virtual",
+        "description": "Cartão digital emitido instantaneamente pronto para uso"
+      },
+      "physicalCard": {
+        "title": "Cartão físico",
+        "description": "Em breve - um cartão real para pagamentos presenciais"
+      },
+      "multiCurrency": {
+        "title": "Multi-moeda",
+        "description": "Suporte para USDC, USDT e mais moedas em breve"
+      },
+      "globalPayments": {
+        "title": "Pagamentos globais",
+        "description": "Use seu cartão onde Visa/Mastercard for aceito"
+      },
+      "lowFees": {
+        "title": "Taxas baixas",
+        "description": "Taxas competitivas para todas as suas transações"
+      },
+      "security": {
+        "title": "Segurança bancária",
+        "description": "Seus fundos são protegidos com segurança de nível empresarial"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Moedas suportadas",
+    "subtitle": "Comece com stablecoins, expanda para mais",
+    "current": "Atualmente suportadas",
+    "coming": "Em breve",
+    "stablecoin": "Stablecoin"
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "subtitle": "Comece em minutos",
+    "steps": {
+      "download": {
+        "title": "Baixe o app",
+        "description": "Baixe BitcoinPay na App Store ou Google Play"
+      },
+      "verify": {
+        "title": "Verifique a identidade",
+        "description": "Complete o KYC com seu documento de identidade"
+      },
+      "issue": {
+        "title": "Receba seu cartão",
+        "description": "Seu cartão virtual é emitido instantaneamente"
+      },
+      "addWallet": {
+        "title": "Adicione à carteira",
+        "description": "Adicione seu cartão ao Apple Pay ou Google Pay"
+      },
+      "spend": {
+        "title": "Comece a gastar",
+        "description": "Use sua crypto onde cartões são aceitos"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Perguntas frequentes",
+    "items": {
+      "howToStart": {
+        "question": "Como posso começar a usar o BitcoinPay?",
+        "answer": "Após completar a verificação de identidade com um documento oficial do seu país de residência, seu cartão será emitido imediatamente."
+      },
+      "cost": {
+        "question": "Quanto custa abrir uma conta?",
+        "answer": "A criação da conta é completamente gratuita."
+      },
+      "tax": {
+        "question": "Existe recurso de cálculo de impostos?",
+        "answer": "Atualmente este recurso não está disponível. No entanto, planejamos implementar recursos de processamento fiscal adaptados ao sistema tributário de cada país em atualizações futuras."
+      },
+      "currencies": {
+        "question": "Quais criptomoedas são suportadas?",
+        "answer": "Atualmente suportamos USDC e USDT. Planejamos adicionar suporte para Bitcoin SV, ETH, Solana, MATIC e BSC no futuro."
+      },
+      "security": {
+        "question": "O BitcoinPay é seguro?",
+        "answer": "Usamos medidas de segurança de nível empresarial para proteger seus fundos e informações pessoais. Seus ativos permanecem em auto-custódia."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Entrar na lista de espera",
+    "subtitle": "Seja o primeiro a saber quando lançarmos",
+    "placeholder": "Digite seu e-mail",
+    "button": "Entrar na lista",
+    "success": "Obrigado por se juntar! Entraremos em contato em breve.",
+    "error": "Algo deu errado. Tente novamente."
+  },
+  "contact": {
+    "title": "Fale conosco",
+    "subtitle": "Estamos aqui para ajudar",
+    "personal": {
+      "title": "Consultas pessoais",
+      "description": "Para usuários individuais",
+      "button": "Contatar suporte"
+    },
+    "business": {
+      "title": "Consultas empresariais",
+      "description": "Para parcerias e empresas",
+      "button": "Contatar vendas"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Suporte pessoal",
+      "name": "Nome",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar mensagem",
+      "subjects": {
+        "general": "Consulta geral",
+        "account": "Problemas de conta",
+        "payment": "Problemas de pagamento",
+        "other": "Outro"
+      }
+    },
+    "business": {
+      "title": "Consulta empresarial",
+      "companyName": "Nome da empresa",
+      "department": "Departamento",
+      "name": "Nome do contato",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "inquiryType": "Tipo de consulta",
+      "message": "Mensagem",
+      "submit": "Enviar consulta",
+      "types": {
+        "partnership": "Parceria",
+        "integration": "Integração API",
+        "enterprise": "Soluções empresariais",
+        "other": "Outro"
+      }
+    },
+    "success": "Sua mensagem foi enviada com sucesso.",
+    "error": "Falha ao enviar mensagem. Tente novamente.",
+    "validation": {
+      "emailRequired": "O endereço de e-mail é obrigatório",
+      "emailInvalid": "Por favor, insira um endereço de e-mail válido",
+      "nameRequired": "O nome é obrigatório"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Links",
+      "download": "Download"
+    },
+    "links": {
+      "terms": "Termos de serviço",
+      "privacy": "Política de privacidade"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Todos os direitos reservados."
+  },
+  "common": {
+    "comingSoon": "Em breve",
+    "learnMore": "Saiba mais",
+    "getStarted": "Começar",
+    "backToHome": "Voltar para início",
+    "downloadOn": "Baixe no",
+    "getItOn": "Disponível no"
+  },
+  "terms": {
+    "lastUpdated": "Última atualização: Dezembro de 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Aceitação dos Termos",
+        "content": "Ao acessar e usar os serviços do BitcoinPay, você aceita e concorda em ficar vinculado aos termos e disposições deste acordo."
+      },
+      "description": {
+        "title": "2. Descrição do Serviço",
+        "content": "O BitcoinPay fornece um serviço de cartão de crédito virtual que permite aos usuários gastar criptomoeda (USDC/USDT) para compras diárias através do Apple Pay e Google Pay."
+      },
+      "eligibility": {
+        "title": "3. Elegibilidade do Usuário",
+        "content": "Você deve ter pelo menos 18 anos e ser capaz de formar um contrato vinculativo para usar nossos serviços. Você deve completar a verificação de identidade (KYC) antes de acessar os serviços de cartão."
+      },
+      "responsibilities": {
+        "title": "4. Responsabilidades do Usuário",
+        "items": [
+          "Fornecer informações precisas e completas durante o registro",
+          "Manter a segurança das credenciais da sua conta",
+          "Cumprir todas as leis e regulamentos aplicáveis",
+          "Não usar o serviço para qualquer finalidade ilegal ou não autorizada"
+        ]
+      },
+      "fees": {
+        "title": "5. Taxas e Encargos",
+        "content": "A criação da conta é gratuita. Taxas de transação e outros encargos podem ser aplicados e serão divulgados antes que qualquer transação seja concluída."
+      },
+      "liability": {
+        "title": "6. Limitação de Responsabilidade",
+        "content": "O BitcoinPay não será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos resultantes do seu uso do serviço."
+      },
+      "changes": {
+        "title": "7. Alterações nos Termos",
+        "content": "Reservamo-nos o direito de modificar estes termos a qualquer momento. Os usuários serão notificados de quaisquer alterações materiais."
+      },
+      "contact": {
+        "title": "8. Informações de Contato",
+        "content": "Para perguntas sobre estes Termos de Serviço, entre em contato conosco através do nosso formulário de contato."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Última atualização: Dezembro de 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Informações que Coletamos",
+        "content": "Coletamos informações que você nos fornece diretamente, incluindo:",
+        "items": [
+          "Informações de identificação pessoal (nome, endereço de e-mail, número de telefone)",
+          "Documentos de identificação emitidos pelo governo para verificação KYC",
+          "Informações de transação e pagamento",
+          "Informações de dispositivo e uso"
+        ]
+      },
+      "usage": {
+        "title": "2. Como Usamos Suas Informações",
+        "content": "Usamos as informações que coletamos para:",
+        "items": [
+          "Fornecer, manter e melhorar nossos serviços",
+          "Processar transações e enviar informações relacionadas",
+          "Verificar sua identidade e prevenir fraudes",
+          "Cumprir obrigações legais",
+          "Comunicar com você sobre produtos, serviços e eventos"
+        ]
+      },
+      "sharing": {
+        "title": "3. Compartilhamento de Informações",
+        "content": "Não vendemos suas informações pessoais. Podemos compartilhar suas informações com:",
+        "items": [
+          "Provedores de serviços que auxiliam em nossas operações",
+          "Autoridades reguladoras quando exigido por lei",
+          "Parceiros com seu consentimento"
+        ]
+      },
+      "security": {
+        "title": "4. Segurança de Dados",
+        "content": "Implementamos medidas técnicas e organizacionais apropriadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição."
+      },
+      "rights": {
+        "title": "5. Seus Direitos",
+        "content": "Você tem o direito de:",
+        "items": [
+          "Acessar suas informações pessoais",
+          "Corrigir dados imprecisos",
+          "Solicitar exclusão de seus dados",
+          "Objetar ao processamento de seus dados",
+          "Portabilidade de dados"
+        ]
+      },
+      "retention": {
+        "title": "6. Retenção de Dados",
+        "content": "Retemos suas informações pessoais pelo tempo necessário para cumprir os propósitos para os quais foram coletadas e para cumprir obrigações legais."
+      },
+      "cookies": {
+        "title": "7. Cookies e Rastreamento",
+        "content": "Usamos cookies e tecnologias similares para coletar informações sobre suas atividades de navegação e fornecer uma melhor experiência."
+      },
+      "policyChanges": {
+        "title": "8. Alterações a Esta Política",
+        "content": "Podemos atualizar esta política de privacidade periodicamente. Notificaremos você sobre quaisquer alterações materiais publicando a nova política nesta página."
+      },
+      "contact": {
+        "title": "9. Fale Conosco",
+        "content": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco através do nosso formulário de contato."
+      }
+    }
+  }
+}

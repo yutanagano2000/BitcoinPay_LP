@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Kripto untuk Pembayaran Sehari-hari",
+    "description": "Kartu kredit virtual berbasis USDC/USDT. Gunakan kripto untuk pembayaran sehari-hari dengan Apple Pay dan Google Pay."
+  },
+  "nav": {
+    "about": "Tentang",
+    "features": "Fitur",
+    "currencies": "Mata Uang",
+    "faq": "FAQ",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "title": "Kripto untuk Pembayaran Sehari-hari",
+    "subtitle": "Kartu kredit virtual berbasis USDC/USDT",
+    "description": "Bayar di toko, toko online, dan di mana saja Apple Pay atau Google Pay diterima - semua dengan kripto Anda.",
+    "cta": "Gabung Daftar Tunggu",
+    "comingSoon": "Segera Hadir",
+    "badges": {
+      "selfCustody": "Self-Custody",
+      "instant": "Instan",
+      "global": "Global"
+    },
+    "balance": "Saldo"
+  },
+  "about": {
+    "title": "Apa itu BitcoinPay?",
+    "subtitle": "Cara baru untuk membelanjakan kripto Anda",
+    "description": "BitcoinPay adalah kartu kredit virtual yang memungkinkan Anda membelanjakan USDC/USDT langsung dalam kehidupan sehari-hari. Tidak perlu rekening bank.",
+    "features": {
+      "instant": {
+        "title": "Penerbitan Kartu Instan",
+        "description": "Dapatkan kartu virtual Anda segera setelah verifikasi identitas"
+      },
+      "wallet": {
+        "title": "Apple Pay & Google Pay",
+        "description": "Tambahkan kartu ke dompet mobile Anda dan bayar di mana saja"
+      },
+      "custody": {
+        "title": "Self-Custody",
+        "description": "Aset Anda tetap di bawah kendali Anda setiap saat"
+      },
+      "noBank": {
+        "title": "Tanpa Rekening Bank",
+        "description": "Hidup tanpa bergantung pada sistem perbankan tradisional"
+      }
+    }
+  },
+  "features": {
+    "title": "Fitur",
+    "subtitle": "Semua yang Anda butuhkan untuk membelanjakan kripto",
+    "list": {
+      "virtualCard": {
+        "title": "Kartu Virtual",
+        "description": "Kartu digital yang diterbitkan secara instan siap digunakan"
+      },
+      "physicalCard": {
+        "title": "Kartu Fisik",
+        "description": "Segera hadir - kartu nyata untuk pembayaran langsung"
+      },
+      "multiCurrency": {
+        "title": "Multi-Mata Uang",
+        "description": "Dukungan untuk USDC, USDT, dan lebih banyak mata uang segera hadir"
+      },
+      "globalPayments": {
+        "title": "Pembayaran Global",
+        "description": "Gunakan kartu Anda di mana saja Visa/Mastercard diterima"
+      },
+      "lowFees": {
+        "title": "Biaya Rendah",
+        "description": "Tarif kompetitif untuk semua transaksi Anda"
+      },
+      "security": {
+        "title": "Keamanan Setara Bank",
+        "description": "Dana Anda dilindungi dengan keamanan tingkat enterprise"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Mata Uang yang Didukung",
+    "subtitle": "Mulai dengan stablecoin, kembangkan ke lebih banyak",
+    "current": "Saat Ini Didukung",
+    "coming": "Segera Hadir",
+    "stablecoin": "Stablecoin"
+  },
+  "howItWorks": {
+    "title": "Cara Kerjanya",
+    "subtitle": "Mulai dalam hitungan menit",
+    "steps": {
+      "download": {
+        "title": "Unduh Aplikasi",
+        "description": "Dapatkan BitcoinPay dari App Store atau Google Play"
+      },
+      "verify": {
+        "title": "Verifikasi Identitas",
+        "description": "Selesaikan KYC dengan ID yang dikeluarkan pemerintah"
+      },
+      "issue": {
+        "title": "Dapatkan Kartu Anda",
+        "description": "Kartu virtual Anda diterbitkan secara instan"
+      },
+      "addWallet": {
+        "title": "Tambahkan ke Dompet",
+        "description": "Tambahkan kartu Anda ke Apple Pay atau Google Pay"
+      },
+      "spend": {
+        "title": "Mulai Membelanjakan",
+        "description": "Gunakan kripto Anda di mana saja kartu diterima"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Pertanyaan yang Sering Diajukan",
+    "items": {
+      "howToStart": {
+        "question": "Bagaimana cara mulai menggunakan BitcoinPay?",
+        "answer": "Setelah menyelesaikan verifikasi identitas dengan ID yang dikeluarkan pemerintah dari negara tempat tinggal Anda, kartu Anda akan diterbitkan segera."
+      },
+      "cost": {
+        "question": "Berapa biaya untuk membuka akun?",
+        "answer": "Pembuatan akun sepenuhnya gratis."
+      },
+      "tax": {
+        "question": "Apakah ada fitur perhitungan pajak?",
+        "answer": "Saat ini fitur ini belum tersedia. Namun, kami berencana untuk mengimplementasikan fitur pemrosesan pajak yang disesuaikan dengan sistem pajak masing-masing negara di pembaruan mendatang."
+      },
+      "currencies": {
+        "question": "Cryptocurrency apa saja yang didukung?",
+        "answer": "Saat ini kami mendukung USDC dan USDT. Kami berencana untuk menambahkan dukungan untuk Bitcoin SV, ETH, Solana, MATIC, dan BSC di masa depan."
+      },
+      "security": {
+        "question": "Seberapa aman BitcoinPay?",
+        "answer": "Kami menggunakan langkah-langkah keamanan tingkat enterprise untuk melindungi dana dan informasi pribadi Anda. Aset Anda tetap dalam self-custody."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Gabung Daftar Tunggu",
+    "subtitle": "Jadilah yang pertama tahu saat kami meluncurkan",
+    "placeholder": "Masukkan email Anda",
+    "button": "Gabung",
+    "success": "Terima kasih telah bergabung! Kami akan segera menghubungi Anda.",
+    "error": "Terjadi kesalahan. Silakan coba lagi."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Kami siap membantu",
+    "personal": {
+      "title": "Pertanyaan Pribadi",
+      "description": "Untuk pengguna individual",
+      "button": "Hubungi Dukungan"
+    },
+    "business": {
+      "title": "Pertanyaan Bisnis",
+      "description": "Untuk kemitraan dan korporat",
+      "button": "Hubungi Sales"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Dukungan Pribadi",
+      "name": "Nama",
+      "email": "Email",
+      "subject": "Subjek",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "subjects": {
+        "general": "Pertanyaan Umum",
+        "account": "Masalah Akun",
+        "payment": "Masalah Pembayaran",
+        "other": "Lainnya"
+      }
+    },
+    "business": {
+      "title": "Pertanyaan Bisnis",
+      "companyName": "Nama Perusahaan",
+      "department": "Departemen",
+      "name": "Nama Kontak",
+      "email": "Email",
+      "phone": "Telepon",
+      "inquiryType": "Jenis Pertanyaan",
+      "message": "Pesan",
+      "submit": "Kirim Pertanyaan",
+      "types": {
+        "partnership": "Kemitraan",
+        "integration": "Integrasi API",
+        "enterprise": "Solusi Enterprise",
+        "other": "Lainnya"
+      }
+    },
+    "success": "Pesan Anda telah berhasil dikirim.",
+    "error": "Gagal mengirim pesan. Silakan coba lagi.",
+    "validation": {
+      "emailRequired": "Alamat email wajib diisi",
+      "emailInvalid": "Silakan masukkan alamat email yang valid",
+      "nameRequired": "Nama wajib diisi"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Tautan",
+      "download": "Unduh"
+    },
+    "links": {
+      "terms": "Ketentuan Layanan",
+      "privacy": "Kebijakan Privasi"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Hak cipta dilindungi."
+  },
+  "common": {
+    "comingSoon": "Segera Hadir",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "getStarted": "Mulai",
+    "backToHome": "Kembali ke Beranda",
+    "downloadOn": "Unduh di",
+    "getItOn": "Dapatkan di"
+  },
+  "terms": {
+    "lastUpdated": "Terakhir diperbarui: Desember 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Penerimaan Ketentuan",
+        "content": "Dengan mengakses dan menggunakan layanan BitcoinPay, Anda menerima dan setuju untuk terikat oleh ketentuan dan ketentuan perjanjian ini."
+      },
+      "description": {
+        "title": "2. Deskripsi Layanan",
+        "content": "BitcoinPay menyediakan layanan kartu kredit virtual yang memungkinkan pengguna untuk membelanjakan cryptocurrency (USDC/USDT) untuk pembelian sehari-hari melalui Apple Pay dan Google Pay."
+      },
+      "eligibility": {
+        "title": "3. Kelayakan Pengguna",
+        "content": "Anda harus berusia minimal 18 tahun dan mampu membentuk kontrak yang mengikat untuk menggunakan layanan kami. Anda harus menyelesaikan verifikasi identitas (KYC) sebelum mengakses layanan kartu."
+      },
+      "responsibilities": {
+        "title": "4. Tanggung Jawab Pengguna",
+        "items": [
+          "Memberikan informasi yang akurat dan lengkap selama pendaftaran",
+          "Menjaga keamanan kredensial akun Anda",
+          "Mematuhi semua hukum dan peraturan yang berlaku",
+          "Tidak menggunakan layanan untuk tujuan ilegal atau tidak sah"
+        ]
+      },
+      "fees": {
+        "title": "5. Biaya dan Tagihan",
+        "content": "Pembuatan akun gratis. Biaya transaksi dan biaya lainnya mungkin berlaku dan akan diungkapkan sebelum transaksi selesai."
+      },
+      "liability": {
+        "title": "6. Batasan Tanggung Jawab",
+        "content": "BitcoinPay tidak bertanggung jawab atas kerugian tidak langsung, insidental, khusus, konsekuensial, atau hukuman yang dihasilkan dari penggunaan layanan Anda."
+      },
+      "changes": {
+        "title": "7. Perubahan Ketentuan",
+        "content": "Kami berhak untuk mengubah ketentuan ini kapan saja. Pengguna akan diberitahu tentang perubahan material apa pun."
+      },
+      "contact": {
+        "title": "8. Informasi Kontak",
+        "content": "Untuk pertanyaan tentang Ketentuan Layanan ini, silakan hubungi kami melalui formulir kontak kami."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Terakhir diperbarui: Desember 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Informasi yang Kami Kumpulkan",
+        "content": "Kami mengumpulkan informasi yang Anda berikan langsung kepada kami, termasuk:",
+        "items": [
+          "Informasi identifikasi pribadi (nama, alamat email, nomor telepon)",
+          "Dokumen identitas yang dikeluarkan pemerintah untuk verifikasi KYC",
+          "Informasi transaksi dan pembayaran",
+          "Informasi perangkat dan penggunaan"
+        ]
+      },
+      "usage": {
+        "title": "2. Bagaimana Kami Menggunakan Informasi Anda",
+        "content": "Kami menggunakan informasi yang kami kumpulkan untuk:",
+        "items": [
+          "Menyediakan, memelihara, dan meningkatkan layanan kami",
+          "Memproses transaksi dan mengirim informasi terkait",
+          "Memverifikasi identitas Anda dan mencegah penipuan",
+          "Mematuhi kewajiban hukum",
+          "Berkomunikasi dengan Anda tentang produk, layanan, dan acara"
+        ]
+      },
+      "sharing": {
+        "title": "3. Berbagi Informasi",
+        "content": "Kami tidak menjual informasi pribadi Anda. Kami dapat membagikan informasi Anda dengan:",
+        "items": [
+          "Penyedia layanan yang membantu operasi kami",
+          "Otoritas regulasi ketika diwajibkan oleh hukum",
+          "Mitra dengan persetujuan Anda"
+        ]
+      },
+      "security": {
+        "title": "4. Keamanan Data",
+        "content": "Kami menerapkan langkah-langkah teknis dan organisasi yang tepat untuk melindungi informasi pribadi Anda dari akses tidak sah, perubahan, pengungkapan, atau penghancuran."
+      },
+      "rights": {
+        "title": "5. Hak Anda",
+        "content": "Anda memiliki hak untuk:",
+        "items": [
+          "Mengakses informasi pribadi Anda",
+          "Memperbaiki data yang tidak akurat",
+          "Meminta penghapusan data Anda",
+          "Menolak pemrosesan data Anda",
+          "Portabilitas data"
+        ]
+      },
+      "retention": {
+        "title": "6. Penyimpanan Data",
+        "content": "Kami menyimpan informasi pribadi Anda selama diperlukan untuk memenuhi tujuan pengumpulannya dan untuk mematuhi kewajiban hukum."
+      },
+      "cookies": {
+        "title": "7. Cookie dan Pelacakan",
+        "content": "Kami menggunakan cookie dan teknologi serupa untuk mengumpulkan informasi tentang aktivitas browsing Anda dan memberikan pengalaman yang lebih baik."
+      },
+      "policyChanges": {
+        "title": "8. Perubahan pada Kebijakan Ini",
+        "content": "Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan material dengan memposting kebijakan baru di halaman ini."
+      },
+      "contact": {
+        "title": "9. Hubungi Kami",
+        "content": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami melalui formulir kontak kami."
+      }
+    }
+  }
+}

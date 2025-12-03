@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "title": "BitcoinPay - 暗号資産を毎日の支払いに",
+    "description": "USDC/USDTで完結するバーチャルクレジットカード。Apple PayやGoogle Payで暗号資産を日常使いに。"
+  },
+  "nav": {
+    "about": "概要",
+    "features": "機能",
+    "currencies": "対応通貨",
+    "faq": "FAQ",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "title": "暗号資産を、毎日の支払いに",
+    "subtitle": "USDC/USDTで完結するバーチャルカード",
+    "description": "コンビニ、オンラインショップ、Apple PayやGoogle Payが使えるすべての場所で、暗号資産をそのまま使えます。",
+    "cta": "ウェイトリストに登録",
+    "comingSoon": "Coming Soon",
+    "badges": {
+      "selfCustody": "セルフカストディ",
+      "instant": "即時発行",
+      "global": "グローバル"
+    },
+    "balance": "残高"
+  },
+  "about": {
+    "title": "BitcoinPayとは？",
+    "subtitle": "暗号資産の新しい使い方",
+    "description": "BitcoinPayは、USDC/USDTを日常生活で直接使えるバーチャルクレジットカードです。銀行口座は必要ありません。",
+    "features": {
+      "instant": {
+        "title": "即時カード発行",
+        "description": "本人確認完了後、すぐにバーチャルカードを取得"
+      },
+      "wallet": {
+        "title": "Apple Pay & Google Pay",
+        "description": "モバイルウォレットに追加してどこでも支払い"
+      },
+      "custody": {
+        "title": "セルフカストディ",
+        "description": "資産は常にあなたの管理下に"
+      },
+      "noBank": {
+        "title": "銀行口座不要",
+        "description": "従来の銀行システムに依存しない生活を"
+      }
+    }
+  },
+  "features": {
+    "title": "機能",
+    "subtitle": "暗号資産を使うために必要なすべて",
+    "list": {
+      "virtualCard": {
+        "title": "バーチャルカード",
+        "description": "即時発行されるデジタルカードですぐに利用開始"
+      },
+      "physicalCard": {
+        "title": "物理カード",
+        "description": "近日対応 - 実店舗での支払いに使えるリアルカード"
+      },
+      "multiCurrency": {
+        "title": "マルチ通貨対応",
+        "description": "USDC、USDTに加え、さらに多くの通貨に対応予定"
+      },
+      "globalPayments": {
+        "title": "グローバル決済",
+        "description": "Visa/Mastercard加盟店ならどこでも利用可能"
+      },
+      "lowFees": {
+        "title": "低手数料",
+        "description": "すべての取引で競争力のある手数料"
+      },
+      "security": {
+        "title": "銀行レベルのセキュリティ",
+        "description": "エンタープライズグレードのセキュリティで資産を保護"
+      }
+    }
+  },
+  "currencies": {
+    "title": "対応通貨",
+    "subtitle": "ステーブルコインから始まり、さらに拡大",
+    "current": "現在対応中",
+    "coming": "対応予定",
+    "stablecoin": "ステーブルコイン"
+  },
+  "howItWorks": {
+    "title": "ご利用の流れ",
+    "subtitle": "数分で始められます",
+    "steps": {
+      "download": {
+        "title": "アプリをダウンロード",
+        "description": "App StoreまたはGoogle PlayからBitcoinPayを入手"
+      },
+      "verify": {
+        "title": "本人確認",
+        "description": "政府発行の身分証明書でKYCを完了"
+      },
+      "issue": {
+        "title": "カードを取得",
+        "description": "バーチャルカードが即時発行されます"
+      },
+      "addWallet": {
+        "title": "ウォレットに追加",
+        "description": "Apple PayまたはGoogle Payにカードを追加"
+      },
+      "spend": {
+        "title": "利用開始",
+        "description": "カードが使えるどこでも暗号資産で支払い"
+      }
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "FAQ",
+    "items": {
+      "howToStart": {
+        "question": "どうしたら利用できますか？",
+        "answer": "お住まいの国で公的に認められている身分証明書による本人確認完了後、すぐにカードが発行されます。"
+      },
+      "cost": {
+        "question": "アカウント開設費用はいくらかかりますか？",
+        "answer": "無料です。"
+      },
+      "tax": {
+        "question": "税金計算機能は含まれていますか？",
+        "answer": "現状は含まれていませんが、将来のアップデートで各国の税金体系に合った処理機能を実装する予定です。"
+      },
+      "currencies": {
+        "question": "どの暗号資産に対応していますか？",
+        "answer": "現在はUSDCとUSDTに対応しています。今後、Bitcoin SV、ETH、Solana、MATIC、BSCへの対応を予定しています。"
+      },
+      "security": {
+        "question": "BitcoinPayのセキュリティは？",
+        "answer": "エンタープライズグレードのセキュリティ対策で資産と個人情報を保護しています。資産はセルフカストディで管理されます。"
+      }
+    }
+  },
+  "waitlist": {
+    "title": "ウェイトリストに登録",
+    "subtitle": "ローンチ時に最初にお知らせします",
+    "placeholder": "メールアドレスを入力",
+    "button": "登録する",
+    "success": "ご登録ありがとうございます。近日中にご連絡いたします。",
+    "error": "エラーが発生しました。もう一度お試しください。"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "お気軽にご連絡ください",
+    "personal": {
+      "title": "個人のお客様",
+      "description": "個人ユーザー向けサポート",
+      "button": "サポートに問い合わせ"
+    },
+    "business": {
+      "title": "法人のお客様",
+      "description": "パートナーシップ・法人向け",
+      "button": "営業に問い合わせ"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "個人サポート",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "subject": "件名",
+      "message": "メッセージ",
+      "submit": "送信する",
+      "subjects": {
+        "general": "一般的なお問い合わせ",
+        "account": "アカウントについて",
+        "payment": "決済について",
+        "other": "その他"
+      }
+    },
+    "business": {
+      "title": "法人お問い合わせ",
+      "companyName": "会社名",
+      "department": "部署名",
+      "name": "ご担当者名",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "inquiryType": "お問い合わせ種別",
+      "message": "メッセージ",
+      "submit": "送信する",
+      "types": {
+        "partnership": "パートナーシップ",
+        "integration": "API連携",
+        "enterprise": "エンタープライズソリューション",
+        "other": "その他"
+      }
+    },
+    "success": "メッセージが正常に送信されました。",
+    "error": "送信に失敗しました。もう一度お試しください。",
+    "validation": {
+      "emailRequired": "メールアドレスは必須です",
+      "emailInvalid": "正しいメールアドレスの形式で入力してください",
+      "nameRequired": "お名前は必須です"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay株式会社",
+      "address": "〒103-0022 東京都中央区日本橋室町1丁目11番12号 日本橋水野ビル7階"
+    },
+    "sections": {
+      "links": "リンク",
+      "download": "ダウンロード"
+    },
+    "links": {
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "All rights reserved."
+  },
+  "common": {
+    "comingSoon": "Coming Soon",
+    "learnMore": "詳しく見る",
+    "getStarted": "始める",
+    "backToHome": "ホームに戻る",
+    "downloadOn": "ダウンロード",
+    "getItOn": "入手"
+  },
+  "downloadBanner": {
+    "tagline": "1分で登録！すぐにお買い物",
+    "cta": "ウェイトリストに登録"
+  },
+  "terms": {
+    "lastUpdated": "最終更新日: 2024年12月",
+    "sections": {
+      "acceptance": {
+        "title": "1. 利用規約への同意",
+        "content": "BitcoinPayサービスにアクセスし利用することにより、本契約の条項に拘束されることに同意したものとみなされます。"
+      },
+      "description": {
+        "title": "2. サービスの説明",
+        "content": "BitcoinPayは、Apple PayやGoogle Payを通じて暗号資産（USDC/USDT）を日常の買い物に利用できるバーチャルクレジットカードサービスを提供しています。"
+      },
+      "eligibility": {
+        "title": "3. 利用資格",
+        "content": "本サービスを利用するには、18歳以上であり、法的拘束力のある契約を締結できる能力を有している必要があります。カードサービスにアクセスする前に本人確認（KYC）を完了する必要があります。"
+      },
+      "responsibilities": {
+        "title": "4. ユーザーの責任",
+        "items": [
+          "登録時に正確かつ完全な情報を提供すること",
+          "アカウント認証情報のセキュリティを維持すること",
+          "すべての適用法令を遵守すること",
+          "違法または不正な目的でサービスを使用しないこと"
+        ]
+      },
+      "fees": {
+        "title": "5. 手数料",
+        "content": "アカウント開設は無料です。取引手数料およびその他の料金が適用される場合があり、取引完了前に開示されます。"
+      },
+      "liability": {
+        "title": "6. 責任の制限",
+        "content": "BitcoinPayは、お客様のサービス利用に起因する間接的、偶発的、特別、結果的、または懲罰的損害について責任を負いません。"
+      },
+      "changes": {
+        "title": "7. 規約の変更",
+        "content": "当社はいつでもこれらの規約を変更する権利を留保します。重要な変更がある場合はユーザーに通知されます。"
+      },
+      "contact": {
+        "title": "8. お問い合わせ",
+        "content": "本利用規約に関するご質問は、お問い合わせフォームからご連絡ください。"
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "最終更新日: 2024年12月",
+    "sections": {
+      "collection": {
+        "title": "1. 収集する情報",
+        "content": "当社は、お客様から直接提供される以下の情報を収集します:",
+        "items": [
+          "個人識別情報（氏名、メールアドレス、電話番号）",
+          "KYC認証用の政府発行身分証明書",
+          "取引および決済情報",
+          "デバイスおよび利用情報"
+        ]
+      },
+      "usage": {
+        "title": "2. 情報の利用方法",
+        "content": "収集した情報は以下の目的で利用されます:",
+        "items": [
+          "サービスの提供、維持、改善",
+          "取引の処理および関連情報の送信",
+          "本人確認および不正防止",
+          "法的義務の遵守",
+          "製品、サービス、イベントに関するお客様とのコミュニケーション"
+        ]
+      },
+      "sharing": {
+        "title": "3. 情報の共有",
+        "content": "当社はお客様の個人情報を販売しません。以下の場合に情報を共有することがあります:",
+        "items": [
+          "当社の運営を支援するサービスプロバイダー",
+          "法律で義務付けられている場合の規制当局",
+          "お客様の同意を得たパートナー"
+        ]
+      },
+      "security": {
+        "title": "4. データセキュリティ",
+        "content": "当社は、お客様の個人情報を不正アクセス、改ざん、開示、または破壊から保護するために、適切な技術的および組織的対策を実施しています。"
+      },
+      "rights": {
+        "title": "5. お客様の権利",
+        "content": "お客様は以下の権利を有しています:",
+        "items": [
+          "個人情報へのアクセス",
+          "不正確なデータの訂正",
+          "データの削除要求",
+          "データ処理への異議申し立て",
+          "データポータビリティ"
+        ]
+      },
+      "retention": {
+        "title": "6. データ保持",
+        "content": "当社は、収集した目的を達成するため、および法的義務を遵守するために必要な期間、お客様の個人情報を保持します。"
+      },
+      "cookies": {
+        "title": "7. クッキーとトラッキング",
+        "content": "当社は、お客様のブラウジング活動に関する情報を収集し、より良い体験を提供するためにクッキーおよび類似の技術を使用しています。"
+      },
+      "policyChanges": {
+        "title": "8. ポリシーの変更",
+        "content": "当社は、このプライバシーポリシーを随時更新することがあります。重要な変更がある場合は、このページに新しいポリシーを掲載してお知らせします。"
+      },
+      "contact": {
+        "title": "9. お問い合わせ",
+        "content": "このプライバシーポリシーに関するご質問は、お問い合わせフォームからご連絡ください。"
+      }
+    }
+  }
+}

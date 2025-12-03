@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Crypto pentru Plăți Zilnice",
+    "description": "Card de credit virtual alimentat de USDC/USDT. Folosește crypto pentru plățile de zi cu zi cu Apple Pay și Google Pay."
+  },
+  "nav": {
+    "about": "Despre",
+    "features": "Caracteristici",
+    "currencies": "Monede",
+    "faq": "Întrebări",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Crypto pentru Plăți Zilnice",
+    "subtitle": "Card de credit virtual alimentat de USDC/USDT",
+    "description": "Plătește la magazine, magazine online și oriunde este acceptat Apple Pay sau Google Pay - totul cu crypto-ul tău.",
+    "cta": "Înscrie-te pe Lista de Așteptare",
+    "comingSoon": "În Curând",
+    "badges": {
+      "selfCustody": "Auto-Custodie",
+      "instant": "Instant",
+      "global": "Global"
+    },
+    "balance": "Sold"
+  },
+  "about": {
+    "title": "Ce este BitcoinPay?",
+    "subtitle": "O nouă modalitate de a cheltui crypto-ul tău",
+    "description": "BitcoinPay este un card de credit virtual care îți permite să cheltuiești USDC/USDT direct în viața de zi cu zi. Nu este necesar cont bancar.",
+    "features": {
+      "instant": {
+        "title": "Emitere Instantanee a Cardului",
+        "description": "Primește cardul virtual imediat după verificarea identității"
+      },
+      "wallet": {
+        "title": "Apple Pay și Google Pay",
+        "description": "Adaugă cardul în portofelul mobil și plătește oriunde"
+      },
+      "custody": {
+        "title": "Auto-Custodie",
+        "description": "Activele tale rămân sub controlul tău în orice moment"
+      },
+      "noBank": {
+        "title": "Fără Cont Bancar",
+        "description": "Trăiește fără să depinzi de sistemele bancare tradiționale"
+      }
+    }
+  },
+  "features": {
+    "title": "Caracteristici",
+    "subtitle": "Tot ce ai nevoie pentru a cheltui crypto",
+    "list": {
+      "virtualCard": {
+        "title": "Card Virtual",
+        "description": "Card digital emis instant, gata de utilizare imediată"
+      },
+      "physicalCard": {
+        "title": "Card Fizic",
+        "description": "În curând - un card real pentru plăți în persoană"
+      },
+      "multiCurrency": {
+        "title": "Multi-Monedă",
+        "description": "Suport pentru USDC, USDT și mai multe monede în curând"
+      },
+      "globalPayments": {
+        "title": "Plăți Globale",
+        "description": "Folosește cardul oriunde este acceptat Visa/Mastercard"
+      },
+      "lowFees": {
+        "title": "Comisioane Mici",
+        "description": "Tarife competitive pentru toate tranzacțiile tale"
+      },
+      "security": {
+        "title": "Securitate de Nivel Bancar",
+        "description": "Fondurile tale sunt protejate cu securitate de nivel enterprise"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Monede Acceptate",
+    "subtitle": "Începe cu stablecoin-uri, extinde la mai multe",
+    "current": "Acceptate Curent",
+    "coming": "În Curând",
+    "stablecoin": "Stablecoin"
+  },
+  "howItWorks": {
+    "title": "Cum Funcționează",
+    "subtitle": "Începe în câteva minute",
+    "steps": {
+      "download": {
+        "title": "Descarcă Aplicația",
+        "description": "Obține BitcoinPay din App Store sau Google Play"
+      },
+      "verify": {
+        "title": "Verifică Identitatea",
+        "description": "Completează KYC cu actul tău de identitate"
+      },
+      "issue": {
+        "title": "Primește Cardul",
+        "description": "Cardul tău virtual este emis instant"
+      },
+      "addWallet": {
+        "title": "Adaugă în Portofel",
+        "description": "Adaugă cardul în Apple Pay sau Google Pay"
+      },
+      "spend": {
+        "title": "Începe să Cheltuiești",
+        "description": "Folosește crypto-ul oriunde sunt acceptate carduri"
+      }
+    }
+  },
+  "faq": {
+    "title": "Întrebări Frecvente",
+    "subtitle": "Întrebări și Răspunsuri",
+    "items": {
+      "howToStart": {
+        "question": "Cum pot începe să folosesc BitcoinPay?",
+        "answer": "După completarea verificării identității cu un act de identitate emis de guvern din țara ta de reședință, cardul tău va fi emis imediat."
+      },
+      "cost": {
+        "question": "Cât costă deschiderea unui cont?",
+        "answer": "Crearea contului este complet gratuită."
+      },
+      "tax": {
+        "question": "Există o funcție de calcul al taxelor?",
+        "answer": "În prezent, această funcție nu este disponibilă. Cu toate acestea, planificăm să implementăm funcții de procesare fiscală adaptate sistemului fiscal al fiecărei țări în actualizările viitoare."
+      },
+      "currencies": {
+        "question": "Ce criptomonede sunt acceptate?",
+        "answer": "În prezent, acceptăm USDC și USDT. Planificăm să adăugăm suport pentru Bitcoin SV, ETH, Solana, MATIC și BSC în viitor."
+      },
+      "security": {
+        "question": "Cât de sigur este BitcoinPay?",
+        "answer": "Folosim măsuri de securitate de nivel enterprise pentru a proteja fondurile și informațiile tale personale. Activele tale rămân în auto-custodie."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Înscrie-te pe Lista de Așteptare",
+    "subtitle": "Fii primul care află când lansăm",
+    "placeholder": "Introdu adresa ta de email",
+    "button": "Înscrie-te",
+    "success": "Mulțumim pentru înscriere! Te vom contacta în curând.",
+    "error": "Ceva nu a funcționat. Te rugăm să încerci din nou."
+  },
+  "contact": {
+    "title": "Contactează-ne",
+    "subtitle": "Suntem aici să te ajutăm",
+    "personal": {
+      "title": "Întrebări Personale",
+      "description": "Pentru utilizatori individuali",
+      "button": "Contactează Suportul"
+    },
+    "business": {
+      "title": "Întrebări de Afaceri",
+      "description": "Pentru parteneriate și corporații",
+      "button": "Contactează Vânzările"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Suport Personal",
+      "name": "Nume",
+      "email": "Email",
+      "subject": "Subiect",
+      "message": "Mesaj",
+      "submit": "Trimite Mesajul",
+      "subjects": {
+        "general": "Întrebare Generală",
+        "account": "Probleme cu Contul",
+        "payment": "Probleme cu Plata",
+        "other": "Altele"
+      }
+    },
+    "business": {
+      "title": "Întrebare de Afaceri",
+      "companyName": "Numele Companiei",
+      "department": "Departament",
+      "name": "Nume Contact",
+      "email": "Email",
+      "phone": "Telefon",
+      "inquiryType": "Tip Întrebare",
+      "message": "Mesaj",
+      "submit": "Trimite Întrebarea",
+      "types": {
+        "partnership": "Parteneriat",
+        "integration": "Integrare API",
+        "enterprise": "Soluții Enterprise",
+        "other": "Altele"
+      }
+    },
+    "success": "Mesajul tău a fost trimis cu succes.",
+    "error": "Trimiterea mesajului a eșuat. Te rugăm să încerci din nou.",
+    "validation": {
+      "emailRequired": "Adresa de email este obligatorie",
+      "emailInvalid": "Vă rugăm să introduceți o adresă de email validă",
+      "nameRequired": "Numele este obligatoriu"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Linkuri",
+      "download": "Descarcă"
+    },
+    "links": {
+      "terms": "Termeni și Condiții",
+      "privacy": "Politica de Confidențialitate"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Toate drepturile rezervate."
+  },
+  "common": {
+    "comingSoon": "În Curând",
+    "learnMore": "Află Mai Multe",
+    "getStarted": "Începe",
+    "backToHome": "Înapoi la Pagina Principală",
+    "downloadOn": "Descarcă pe",
+    "getItOn": "Obține pe"
+  },
+  "terms": {
+    "lastUpdated": "Ultima actualizare: Decembrie 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptarea Termenilor",
+        "content": "Prin accesarea și utilizarea serviciilor BitcoinPay, acceptați și sunteți de acord să fiți legat de termenii și dispozițiile acestui acord."
+      },
+      "description": {
+        "title": "2. Descrierea Serviciului",
+        "content": "BitcoinPay oferă un serviciu de card de credit virtual care permite utilizatorilor să cheltuiască criptomonede (USDC/USDT) pentru achiziții zilnice prin Apple Pay și Google Pay."
+      },
+      "eligibility": {
+        "title": "3. Eligibilitatea Utilizatorului",
+        "content": "Trebuie să aveți cel puțin 18 ani și să fiți capabil să formați un contract obligatoriu pentru a utiliza serviciile noastre. Trebuie să completați verificarea identității (KYC) înainte de a accesa serviciile de card."
+      },
+      "responsibilities": {
+        "title": "4. Responsabilitățile Utilizatorului",
+        "items": [
+          "Furnizați informații exacte și complete în timpul înregistrării",
+          "Mențineți securitatea datelor de autentificare ale contului dvs.",
+          "Respectați toate legile și reglementările aplicabile",
+          "Nu utilizați serviciul în niciun scop ilegal sau neautorizat"
+        ]
+      },
+      "fees": {
+        "title": "5. Taxe și Comisioane",
+        "content": "Crearea contului este gratuită. Pot fi aplicate taxe de tranzacție și alte costuri care vor fi dezvăluite înainte de finalizarea oricărei tranzacții."
+      },
+      "liability": {
+        "title": "6. Limitarea Răspunderii",
+        "content": "BitcoinPay nu va fi răspunzător pentru niciun fel de daune indirecte, accidentale, speciale, consecutive sau punitive rezultate din utilizarea serviciului."
+      },
+      "changes": {
+        "title": "7. Modificări ale Termenilor",
+        "content": "Ne rezervăm dreptul de a modifica acești termeni în orice moment. Utilizatorii vor fi notificați despre orice modificări materiale."
+      },
+      "contact": {
+        "title": "8. Informații de Contact",
+        "content": "Pentru întrebări despre acești Termeni și Condiții, vă rugăm să ne contactați prin formularul nostru de contact."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Ultima actualizare: Decembrie 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Informațiile pe Care le Colectăm",
+        "content": "Colectăm informații pe care ni le furnizați direct, inclusiv:",
+        "items": [
+          "Informații de identificare personală (nume, adresă de email, număr de telefon)",
+          "Documente de identificare emise de guvern pentru verificarea KYC",
+          "Informații despre tranzacții și plăți",
+          "Informații despre dispozitiv și utilizare"
+        ]
+      },
+      "usage": {
+        "title": "2. Cum Folosim Informațiile Dvs.",
+        "content": "Folosim informațiile pe care le colectăm pentru a:",
+        "items": [
+          "Furniza, menține și îmbunătăți serviciile noastre",
+          "Procesa tranzacții și trimite informații conexe",
+          "Verifica identitatea dvs. și preveni frauda",
+          "Respecta obligațiile legale",
+          "Comunica cu dvs. despre produse, servicii și evenimente"
+        ]
+      },
+      "sharing": {
+        "title": "3. Partajarea Informațiilor",
+        "content": "Nu vindem informațiile dvs. personale. Putem partaja informațiile dvs. cu:",
+        "items": [
+          "Furnizori de servicii care asistă în operațiunile noastre",
+          "Autorități de reglementare când este cerut de lege",
+          "Parteneri cu consimțământul dvs."
+        ]
+      },
+      "security": {
+        "title": "4. Securitatea Datelor",
+        "content": "Implementăm măsuri tehnice și organizatorice adecvate pentru a proteja informațiile dvs. personale împotriva accesului neautorizat, modificării, dezvăluirii sau distrugerii."
+      },
+      "rights": {
+        "title": "5. Drepturile Dvs.",
+        "content": "Aveți dreptul de a:",
+        "items": [
+          "Accesa informațiile dvs. personale",
+          "Corecta datele inexacte",
+          "Solicita ștergerea datelor dvs.",
+          "Obiecta la procesarea datelor dvs.",
+          "Portabilitatea datelor"
+        ]
+      },
+      "retention": {
+        "title": "6. Păstrarea Datelor",
+        "content": "Păstrăm informațiile dvs. personale atât timp cât este necesar pentru a îndeplini scopurile pentru care au fost colectate și pentru a respecta obligațiile legale."
+      },
+      "cookies": {
+        "title": "7. Cookie-uri și Urmărire",
+        "content": "Folosim cookie-uri și tehnologii similare pentru a colecta informații despre activitățile dvs. de navigare și pentru a vă oferi o experiență mai bună."
+      },
+      "policyChanges": {
+        "title": "8. Modificări ale Acestei Politici",
+        "content": "Putem actualiza această politică de confidențialitate din când în când. Vă vom anunța despre orice modificări materiale prin publicarea noii politici pe această pagină."
+      },
+      "contact": {
+        "title": "9. Contactați-ne",
+        "content": "Dacă aveți întrebări despre această Politică de Confidențialitate, vă rugăm să ne contactați prin formularul nostru de contact."
+      }
+    }
+  }
+}

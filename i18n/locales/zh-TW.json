@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - 加密貨幣日常支付",
+    "description": "USDC/USDT驅動的虛擬信用卡。使用Apple Pay和Google Pay進行日常加密貨幣支付。"
+  },
+  "nav": {
+    "about": "關於",
+    "features": "功能",
+    "currencies": "貨幣",
+    "faq": "常見問題",
+    "contact": "聯繫我們"
+  },
+  "hero": {
+    "title": "加密貨幣日常支付",
+    "subtitle": "USDC/USDT驅動的虛擬信用卡",
+    "description": "在便利店、網上商店以及任何接受Apple Pay或Google Pay的地方支付 - 全部使用您的加密貨幣。",
+    "cta": "加入等候名單",
+    "comingSoon": "即將推出",
+    "badges": {
+      "selfCustody": "自主託管",
+      "instant": "即時",
+      "global": "全球"
+    },
+    "balance": "餘額"
+  },
+  "about": {
+    "title": "什麼是BitcoinPay？",
+    "subtitle": "消費加密貨幣的新方式",
+    "description": "BitcoinPay是一張虛擬信用卡，讓您可以在日常生活中直接消費USDC/USDT。無需銀行帳戶。",
+    "features": {
+      "instant": {
+        "title": "即時發卡",
+        "description": "身份驗證完成後立即獲得您的虛擬卡"
+      },
+      "wallet": {
+        "title": "Apple Pay和Google Pay",
+        "description": "將您的卡添加到行動錢包，隨時隨地支付"
+      },
+      "custody": {
+        "title": "自主託管",
+        "description": "您的資產始終在您的控制之下"
+      },
+      "noBank": {
+        "title": "無需銀行帳戶",
+        "description": "不依賴傳統銀行系統生活"
+      }
+    }
+  },
+  "features": {
+    "title": "功能",
+    "subtitle": "消費加密貨幣所需的一切",
+    "list": {
+      "virtualCard": {
+        "title": "虛擬卡",
+        "description": "即時發行的數位卡，立即可用"
+      },
+      "physicalCard": {
+        "title": "實體卡",
+        "description": "即將推出 - 用於線下支付的實體卡"
+      },
+      "multiCurrency": {
+        "title": "多幣種",
+        "description": "支援USDC、USDT，更多幣種即將推出"
+      },
+      "globalPayments": {
+        "title": "全球支付",
+        "description": "在任何接受Visa/Mastercard的地方使用您的卡"
+      },
+      "lowFees": {
+        "title": "低手續費",
+        "description": "所有交易享有競爭力的費率"
+      },
+      "security": {
+        "title": "銀行級安全",
+        "description": "您的資金受到企業級安全保護"
+      }
+    }
+  },
+  "currencies": {
+    "title": "支援的貨幣",
+    "subtitle": "從穩定幣開始，擴展到更多",
+    "current": "當前支援",
+    "coming": "即將推出",
+    "stablecoin": "穩定幣"
+  },
+  "howItWorks": {
+    "title": "如何運作",
+    "subtitle": "幾分鐘內即可開始",
+    "steps": {
+      "download": {
+        "title": "下載應用",
+        "description": "從App Store或Google Play獲取BitcoinPay"
+      },
+      "verify": {
+        "title": "身份驗證",
+        "description": "使用政府核發的身份證件完成KYC"
+      },
+      "issue": {
+        "title": "獲取您的卡",
+        "description": "您的虛擬卡即時發行"
+      },
+      "addWallet": {
+        "title": "添加到錢包",
+        "description": "將您的卡添加到Apple Pay或Google Pay"
+      },
+      "spend": {
+        "title": "開始消費",
+        "description": "在任何接受卡片的地方使用您的加密貨幣"
+      }
+    }
+  },
+  "faq": {
+    "title": "常見問題",
+    "subtitle": "常見問題解答",
+    "items": {
+      "howToStart": {
+        "question": "如何開始使用BitcoinPay？",
+        "answer": "使用您居住國的政府核發身份證件完成身份驗證後，您的卡將立即發行。"
+      },
+      "cost": {
+        "question": "開戶需要多少費用？",
+        "answer": "開戶完全免費。"
+      },
+      "tax": {
+        "question": "有稅務計算功能嗎？",
+        "answer": "目前該功能不可用。但是，我們計劃在未來的更新中實施適合各國稅務系統的稅務處理功能。"
+      },
+      "currencies": {
+        "question": "支援哪些加密貨幣？",
+        "answer": "目前我們支援USDC和USDT。我們計劃在未來添加對Bitcoin SV、ETH、Solana、MATIC和BSC的支援。"
+      },
+      "security": {
+        "question": "BitcoinPay安全嗎？",
+        "answer": "我們使用企業級安全措施來保護您的資金和個人資訊。您的資產保持自主託管。"
+      }
+    }
+  },
+  "waitlist": {
+    "title": "加入等候名單",
+    "subtitle": "第一時間獲知我們的發布消息",
+    "placeholder": "輸入您的郵箱",
+    "button": "加入等候名單",
+    "success": "感謝您的加入！我們將盡快與您聯繫。",
+    "error": "出了點問題。請重試。"
+  },
+  "contact": {
+    "title": "聯繫我們",
+    "subtitle": "我們隨時為您提供幫助",
+    "personal": {
+      "title": "個人諮詢",
+      "description": "面向個人用戶",
+      "button": "聯繫客服"
+    },
+    "business": {
+      "title": "商業諮詢",
+      "description": "面向合作夥伴和企業",
+      "button": "聯繫銷售"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "個人支援",
+      "name": "姓名",
+      "email": "郵箱",
+      "subject": "主題",
+      "message": "留言",
+      "submit": "發送消息",
+      "subjects": {
+        "general": "一般諮詢",
+        "account": "帳戶問題",
+        "payment": "支付問題",
+        "other": "其他"
+      }
+    },
+    "business": {
+      "title": "商業諮詢",
+      "companyName": "公司名稱",
+      "department": "部門",
+      "name": "聯繫人姓名",
+      "email": "郵箱",
+      "phone": "電話",
+      "inquiryType": "諮詢類型",
+      "message": "留言",
+      "submit": "發送諮詢",
+      "types": {
+        "partnership": "合作夥伴",
+        "integration": "API整合",
+        "enterprise": "企業解決方案",
+        "other": "其他"
+      }
+    },
+    "success": "您的消息已成功發送。",
+    "error": "消息發送失敗。請重試。",
+    "validation": {
+      "emailRequired": "電子郵件地址為必填項",
+      "emailInvalid": "請輸入有效的電子郵件地址",
+      "nameRequired": "姓名為必填項"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "連結",
+      "download": "下載"
+    },
+    "links": {
+      "terms": "服務條款",
+      "privacy": "隱私政策"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "版權所有。"
+  },
+  "common": {
+    "comingSoon": "即將推出",
+    "learnMore": "了解更多",
+    "getStarted": "開始使用",
+    "backToHome": "返回首頁",
+    "downloadOn": "下載於",
+    "getItOn": "獲取於"
+  },
+  "terms": {
+    "lastUpdated": "最後更新：2024年12月",
+    "sections": {
+      "acceptance": {
+        "title": "1. 條款接受",
+        "content": "通過訪問和使用BitcoinPay服務，您接受並同意受本協議條款和規定的約束。"
+      },
+      "description": {
+        "title": "2. 服務說明",
+        "content": "BitcoinPay提供虛擬信用卡服務，允許用戶通過Apple Pay和Google Pay使用加密貨幣（USDC/USDT）進行日常購物。"
+      },
+      "eligibility": {
+        "title": "3. 用戶資格",
+        "content": "您必須年滿18歲並能夠簽訂具有約束力的合同才能使用我們的服務。在訪問卡服務之前，您必須完成身份驗證（KYC）。"
+      },
+      "responsibilities": {
+        "title": "4. 用戶責任",
+        "items": [
+          "在註冊期間提供準確和完整的資訊",
+          "維護帳戶憑證的安全",
+          "遵守所有適用的法律法規",
+          "不將服務用於任何非法或未經授權的目的"
+        ]
+      },
+      "fees": {
+        "title": "5. 費用和收費",
+        "content": "帳戶創建完全免費。可能會收取交易費用和其他費用，這些費用將在完成任何交易之前披露。"
+      },
+      "liability": {
+        "title": "6. 責任限制",
+        "content": "BitcoinPay對因您使用服務而產生的任何間接、附帶、特殊、後果性或懲罰性損害不承擔責任。"
+      },
+      "changes": {
+        "title": "7. 條款變更",
+        "content": "我們保留隨時修改這些條款的權利。用戶將被通知任何重大變更。"
+      },
+      "contact": {
+        "title": "8. 聯繫資訊",
+        "content": "如對這些服務條款有任何疑問，請通過我們的聯繫表格與我們聯繫。"
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "最後更新：2024年12月",
+    "sections": {
+      "collection": {
+        "title": "1. 我們收集的資訊",
+        "content": "我們收集您直接向我們提供的資訊，包括：",
+        "items": [
+          "個人身份資訊（姓名、電子郵件地址、電話號碼）",
+          "用於KYC驗證的政府核發的身份證件",
+          "交易和支付資訊",
+          "設備和使用資訊"
+        ]
+      },
+      "usage": {
+        "title": "2. 我們如何使用您的資訊",
+        "content": "我們使用收集的資訊來：",
+        "items": [
+          "提供、維護和改進我們的服務",
+          "處理交易並發送相關資訊",
+          "驗證您的身份並防止詐騙",
+          "遵守法律義務",
+          "與您溝通有關產品、服務和活動的資訊"
+        ]
+      },
+      "sharing": {
+        "title": "3. 資訊共享",
+        "content": "我們不會出售您的個人資訊。我們可能會與以下對象共享您的資訊：",
+        "items": [
+          "協助我們運營的服務提供商",
+          "法律要求時的監管機構",
+          "經您同意的合作夥伴"
+        ]
+      },
+      "security": {
+        "title": "4. 資料安全",
+        "content": "我們實施適當的技術和組織措施，以保護您的個人資訊免遭未經授權的訪問、更改、披露或銷毀。"
+      },
+      "rights": {
+        "title": "5. 您的權利",
+        "content": "您有權：",
+        "items": [
+          "訪問您的個人資訊",
+          "更正不準確的資料",
+          "請求刪除您的資料",
+          "反對處理您的資料",
+          "資料可攜性"
+        ]
+      },
+      "retention": {
+        "title": "6. 資料保留",
+        "content": "我們會保留您的個人資訊，只要有必要實現收集資訊的目的並遵守法律義務。"
+      },
+      "cookies": {
+        "title": "7. Cookie和追蹤",
+        "content": "我們使用Cookie和類似技術來收集有關您瀏覽活動的資訊，並為您提供更好的體驗。"
+      },
+      "policyChanges": {
+        "title": "8. 本政策的變更",
+        "content": "我們可能會不時更新本隱私政策。我們將通過在本頁面發布新政策來通知您任何重大變更。"
+      },
+      "contact": {
+        "title": "9. 聯繫我們",
+        "content": "如果您對本隱私政策有任何疑問，請通過我們的聯繫表格與我們聯繫。"
+      }
+    }
+  }
+}

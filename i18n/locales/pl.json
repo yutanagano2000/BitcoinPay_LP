@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Krypto do codziennych płatności",
+    "description": "Wirtualna karta kredytowa zasilana USDC/USDT. Używaj krypto do codziennych płatności z Apple Pay i Google Pay."
+  },
+  "nav": {
+    "about": "O nas",
+    "features": "Funkcje",
+    "currencies": "Waluty",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Krypto do codziennych płatności",
+    "subtitle": "Wirtualna karta kredytowa zasilana USDC/USDT",
+    "description": "Płać w sklepach, sklepach online i wszędzie, gdzie akceptowane jest Apple Pay lub Google Pay - wszystko za pomocą krypto.",
+    "cta": "Dołącz do listy oczekujących",
+    "comingSoon": "Wkrótce",
+    "badges": {
+      "selfCustody": "Samodzielna Kontrola",
+      "instant": "Natychmiastowe",
+      "global": "Globalne"
+    },
+    "balance": "Saldo"
+  },
+  "about": {
+    "title": "Czym jest BitcoinPay?",
+    "subtitle": "Nowy sposób na wydawanie krypto",
+    "description": "BitcoinPay to wirtualna karta kredytowa, która pozwala wydawać USDC/USDT bezpośrednio w codziennym życiu. Konto bankowe nie jest wymagane.",
+    "features": {
+      "instant": {
+        "title": "Natychmiastowe wydanie karty",
+        "description": "Otrzymaj wirtualną kartę natychmiast po weryfikacji tożsamości"
+      },
+      "wallet": {
+        "title": "Apple Pay i Google Pay",
+        "description": "Dodaj kartę do portfela mobilnego i płać wszędzie"
+      },
+      "custody": {
+        "title": "Samodzielna kontrola",
+        "description": "Twoje aktywa zawsze pozostają pod Twoją kontrolą"
+      },
+      "noBank": {
+        "title": "Bez konta bankowego",
+        "description": "Żyj bez zależności od tradycyjnych systemów bankowych"
+      }
+    }
+  },
+  "features": {
+    "title": "Funkcje",
+    "subtitle": "Wszystko, czego potrzebujesz do wydawania krypto",
+    "list": {
+      "virtualCard": {
+        "title": "Karta wirtualna",
+        "description": "Natychmiast wydana karta cyfrowa gotowa do użycia"
+      },
+      "physicalCard": {
+        "title": "Karta fizyczna",
+        "description": "Wkrótce - prawdziwa karta do płatności osobistych"
+      },
+      "multiCurrency": {
+        "title": "Multi-waluta",
+        "description": "Wsparcie dla USDC, USDT i więcej walut wkrótce"
+      },
+      "globalPayments": {
+        "title": "Płatności globalne",
+        "description": "Używaj karty wszędzie, gdzie akceptowane są Visa/Mastercard"
+      },
+      "lowFees": {
+        "title": "Niskie opłaty",
+        "description": "Konkurencyjne stawki dla wszystkich transakcji"
+      },
+      "security": {
+        "title": "Bezpieczeństwo bankowe",
+        "description": "Twoje środki są chronione zabezpieczeniami klasy enterprise"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Obsługiwane waluty",
+    "subtitle": "Zacznij od stablecoinów, rozszerzaj na więcej",
+    "current": "Obecnie obsługiwane",
+    "coming": "Wkrótce",
+    "stablecoin": "Stablecoin"
+  },
+  "howItWorks": {
+    "title": "Jak to działa",
+    "subtitle": "Zacznij w kilka minut",
+    "steps": {
+      "download": {
+        "title": "Pobierz aplikację",
+        "description": "Pobierz BitcoinPay z App Store lub Google Play"
+      },
+      "verify": {
+        "title": "Zweryfikuj tożsamość",
+        "description": "Ukończ KYC za pomocą dokumentu tożsamości"
+      },
+      "issue": {
+        "title": "Otrzymaj kartę",
+        "description": "Twoja wirtualna karta jest wydawana natychmiast"
+      },
+      "addWallet": {
+        "title": "Dodaj do portfela",
+        "description": "Dodaj kartę do Apple Pay lub Google Pay"
+      },
+      "spend": {
+        "title": "Zacznij wydawać",
+        "description": "Używaj krypto wszędzie, gdzie akceptowane są karty"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Często zadawane pytania",
+    "items": {
+      "howToStart": {
+        "question": "Jak mogę zacząć używać BitcoinPay?",
+        "answer": "Po ukończeniu weryfikacji tożsamości za pomocą dokumentu wydanego przez rząd Twojego kraju zamieszkania, karta zostanie wydana natychmiast."
+      },
+      "cost": {
+        "question": "Ile kosztuje otwarcie konta?",
+        "answer": "Utworzenie konta jest całkowicie bezpłatne."
+      },
+      "tax": {
+        "question": "Czy jest funkcja obliczania podatków?",
+        "answer": "Obecnie ta funkcja nie jest dostępna. Planujemy jednak wdrożyć funkcje przetwarzania podatkowego dostosowane do systemu podatkowego każdego kraju w przyszłych aktualizacjach."
+      },
+      "currencies": {
+        "question": "Jakie kryptowaluty są obsługiwane?",
+        "answer": "Obecnie obsługujemy USDC i USDT. Planujemy dodać wsparcie dla Bitcoin SV, ETH, Solana, MATIC i BSC w przyszłości."
+      },
+      "security": {
+        "question": "Jak bezpieczny jest BitcoinPay?",
+        "answer": "Stosujemy środki bezpieczeństwa klasy enterprise, aby chronić Twoje środki i dane osobowe. Twoje aktywa pozostają pod samodzielną kontrolą."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Dołącz do listy oczekujących",
+    "subtitle": "Bądź pierwszym, który dowie się o uruchomieniu",
+    "placeholder": "Wprowadź swój email",
+    "button": "Dołącz",
+    "success": "Dziękujemy za dołączenie! Wkrótce się skontaktujemy.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Jesteśmy tutaj, aby pomóc",
+    "personal": {
+      "title": "Zapytania osobiste",
+      "description": "Dla indywidualnych użytkowników",
+      "button": "Kontakt z supportem"
+    },
+    "business": {
+      "title": "Zapytania biznesowe",
+      "description": "Dla partnerstw i firm",
+      "button": "Kontakt ze sprzedażą"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Wsparcie osobiste",
+      "name": "Imię",
+      "email": "Email",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "submit": "Wyślij wiadomość",
+      "subjects": {
+        "general": "Zapytanie ogólne",
+        "account": "Problemy z kontem",
+        "payment": "Problemy z płatnościami",
+        "other": "Inne"
+      }
+    },
+    "business": {
+      "title": "Zapytanie biznesowe",
+      "companyName": "Nazwa firmy",
+      "department": "Dział",
+      "name": "Osoba kontaktowa",
+      "email": "Email",
+      "phone": "Telefon",
+      "inquiryType": "Typ zapytania",
+      "message": "Wiadomość",
+      "submit": "Wyślij zapytanie",
+      "types": {
+        "partnership": "Partnerstwo",
+        "integration": "Integracja API",
+        "enterprise": "Rozwiązania enterprise",
+        "other": "Inne"
+      }
+    },
+    "success": "Twoja wiadomość została wysłana pomyślnie.",
+    "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "validation": {
+      "emailRequired": "Adres e-mail jest wymagany",
+      "emailInvalid": "Proszę podać prawidłowy adres e-mail",
+      "nameRequired": "Imię jest wymagane"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Linki",
+      "download": "Pobierz"
+    },
+    "links": {
+      "terms": "Warunki korzystania",
+      "privacy": "Polityka prywatności"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "common": {
+    "comingSoon": "Wkrótce",
+    "learnMore": "Dowiedz się więcej",
+    "getStarted": "Rozpocznij",
+    "backToHome": "Powrót do strony głównej",
+    "downloadOn": "Pobierz z",
+    "getItOn": "Pobierz z"
+  },
+  "terms": {
+    "lastUpdated": "Ostatnia aktualizacja: Grudzień 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Akceptacja Warunków",
+        "content": "Uzyskując dostęp do usług BitcoinPay i korzystając z nich, akceptujesz warunki niniejszej umowy i zgadzasz się być nimi związany."
+      },
+      "description": {
+        "title": "2. Opis Usługi",
+        "content": "BitcoinPay oferuje usługę wirtualnej karty kredytowej, która pozwala użytkownikom wydawać kryptowaluty (USDC/USDT) na codzienne zakupy za pośrednictwem Apple Pay i Google Pay."
+      },
+      "eligibility": {
+        "title": "3. Uprawnienia Użytkownika",
+        "content": "Aby korzystać z naszych usług, musisz mieć co najmniej 18 lat i być zdolny do zawarcia wiążącej umowy. Przed uzyskaniem dostępu do usług karty musisz ukończyć weryfikację tożsamości (KYC)."
+      },
+      "responsibilities": {
+        "title": "4. Obowiązki Użytkownika",
+        "items": [
+          "Podawanie dokładnych i kompletnych informacji podczas rejestracji",
+          "Utrzymywanie bezpieczeństwa danych logowania do konta",
+          "Przestrzeganie wszystkich obowiązujących przepisów prawnych",
+          "Nie używanie usługi w żadnym nielegalnym lub nieautoryzowanym celu"
+        ]
+      },
+      "fees": {
+        "title": "5. Opłaty i Prowizje",
+        "content": "Tworzenie konta jest bezpłatne. Mogą obowiązywać opłaty transakcyjne i inne koszty, które zostaną ujawnione przed dokonaniem transakcji."
+      },
+      "liability": {
+        "title": "6. Ograniczenie Odpowiedzialności",
+        "content": "BitcoinPay nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, specjalne, wynikowe lub represyjne wynikające z korzystania przez Ciebie z usługi."
+      },
+      "changes": {
+        "title": "7. Zmiany w Warunkach",
+        "content": "Zastrzegamy sobie prawo do modyfikowania tych warunków w dowolnym czasie. Użytkownicy zostaną powiadomieni o wszelkich istotnych zmianach."
+      },
+      "contact": {
+        "title": "8. Informacje Kontaktowe",
+        "content": "W przypadku pytań dotyczących niniejszych Warunków Korzystania z Usługi prosimy o kontakt za pomocą naszego formularza kontaktowego."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Ostatnia aktualizacja: Grudzień 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Informacje, Które Gromadzimy",
+        "content": "Gromadzimy informacje, które nam bezpośrednio przekazujesz, w tym:",
+        "items": [
+          "Informacje identyfikacyjne (imię i nazwisko, adres e-mail, numer telefonu)",
+          "Dokumenty tożsamości wydane przez rząd w celu weryfikacji KYC",
+          "Informacje o transakcjach i płatnościach",
+          "Informacje o urządzeniu i użytkowaniu"
+        ]
+      },
+      "usage": {
+        "title": "2. Jak Wykorzystujemy Twoje Informacje",
+        "content": "Wykorzystujemy zebrane informacje w celu:",
+        "items": [
+          "Świadczenia, utrzymania i ulepszania naszych usług",
+          "Przetwarzania transakcji i przesyłania powiązanych informacji",
+          "Weryfikacji tożsamości i zapobiegania oszustwom",
+          "Wypełniania obowiązków prawnych",
+          "Komunikacji z Tobą na temat produktów, usług i wydarzeń"
+        ]
+      },
+      "sharing": {
+        "title": "3. Udostępnianie Informacji",
+        "content": "Nie sprzedajemy Twoich danych osobowych. Możemy udostępniać Twoje informacje:",
+        "items": [
+          "Dostawcom usług, którzy wspierają nasze operacje",
+          "Organom regulacyjnym, gdy wymaga tego prawo",
+          "Partnerom za Twoją zgodą"
+        ]
+      },
+      "security": {
+        "title": "4. Bezpieczeństwo Danych",
+        "content": "Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieautoryzowanym dostępem, zmianą, ujawnieniem lub zniszczeniem."
+      },
+      "rights": {
+        "title": "5. Twoje Prawa",
+        "content": "Masz prawo do:",
+        "items": [
+          "Dostępu do swoich danych osobowych",
+          "Poprawiania nieprawidłowych danych",
+          "Żądania usunięcia swoich danych",
+          "Sprzeciwu wobec przetwarzania swoich danych",
+          "Przenoszenia danych"
+        ]
+      },
+      "retention": {
+        "title": "6. Przechowywanie Danych",
+        "content": "Przechowujemy Twoje dane osobowe tak długo, jak jest to konieczne do realizacji celów, w których zostały zebrane, oraz do wypełnienia obowiązków prawnych."
+      },
+      "cookies": {
+        "title": "7. Pliki Cookie i Śledzenie",
+        "content": "Używamy plików cookie i podobnych technologii do zbierania informacji o Twoich działaniach przeglądarkowych i zapewnienia lepszego doświadczenia."
+      },
+      "policyChanges": {
+        "title": "8. Zmiany w Niniejszej Polityce",
+        "content": "Możemy od czasu do czasu aktualizować niniejszą politykę prywatności. Powiadomimy Cię o wszelkich istotnych zmianach, publikując nową politykę na tej stronie."
+      },
+      "contact": {
+        "title": "9. Skontaktuj się z Nami",
+        "content": "Jeśli masz pytania dotyczące niniejszej Polityki Prywatności, skontaktuj się z nami za pomocą naszego formularza kontaktowego."
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "title": "BitcoinPay - Crypto to Everyday Payments",
+    "description": "Virtual credit card powered by USDC/USDT. Use crypto for everyday payments with Apple Pay and Google Pay."
+  },
+  "nav": {
+    "about": "About",
+    "features": "Features",
+    "currencies": "Currencies",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Crypto to Everyday Payments",
+    "subtitle": "Virtual credit card powered by USDC/USDT",
+    "description": "Pay at convenience stores, online shops, and anywhere Apple Pay or Google Pay is accepted - all with your crypto.",
+    "cta": "Join Waitlist",
+    "comingSoon": "Coming Soon",
+    "badges": {
+      "selfCustody": "Kendi Gözetiminizde",
+      "instant": "Anında",
+      "global": "Küresel"
+    },
+    "balance": "Bakiye"
+  },
+  "about": {
+    "title": "What is BitcoinPay?",
+    "subtitle": "A new way to spend your crypto",
+    "description": "BitcoinPay is a virtual credit card that lets you spend USDC/USDT directly in your daily life. No bank account required.",
+    "features": {
+      "instant": {
+        "title": "Instant Card Issuance",
+        "description": "Get your virtual card immediately after identity verification"
+      },
+      "wallet": {
+        "title": "Apple Pay & Google Pay",
+        "description": "Add your card to your mobile wallet and pay anywhere"
+      },
+      "custody": {
+        "title": "Self-Custody",
+        "description": "Your assets remain under your control at all times"
+      },
+      "noBank": {
+        "title": "No Bank Account",
+        "description": "Live without relying on traditional banking systems"
+      }
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need to spend crypto",
+    "list": {
+      "virtualCard": {
+        "title": "Virtual Card",
+        "description": "Instantly issued digital card ready for immediate use"
+      },
+      "physicalCard": {
+        "title": "Physical Card",
+        "description": "Coming soon - a real card for in-person payments"
+      },
+      "multiCurrency": {
+        "title": "Multi-Currency",
+        "description": "Support for USDC, USDT, and more currencies coming"
+      },
+      "globalPayments": {
+        "title": "Global Payments",
+        "description": "Use your card anywhere Visa/Mastercard is accepted"
+      },
+      "lowFees": {
+        "title": "Low Fees",
+        "description": "Competitive rates for all your transactions"
+      },
+      "security": {
+        "title": "Bank-Level Security",
+        "description": "Your funds are protected with enterprise-grade security"
+      }
+    }
+  },
+  "currencies": {
+    "title": "Supported Currencies",
+    "subtitle": "Start with stablecoins, expand to more",
+    "current": "Currently Supported",
+    "coming": "Coming Soon",
+    "stablecoin": "Sabit Kripto Para"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get started in minutes",
+    "steps": {
+      "download": {
+        "title": "Download App",
+        "description": "Get BitcoinPay from App Store or Google Play"
+      },
+      "verify": {
+        "title": "Verify Identity",
+        "description": "Complete KYC with your government-issued ID"
+      },
+      "issue": {
+        "title": "Get Your Card",
+        "description": "Your virtual card is issued instantly"
+      },
+      "addWallet": {
+        "title": "Add to Wallet",
+        "description": "Add your card to Apple Pay or Google Pay"
+      },
+      "spend": {
+        "title": "Start Spending",
+        "description": "Use your crypto anywhere cards are accepted"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "items": {
+      "howToStart": {
+        "question": "How can I start using BitcoinPay?",
+        "answer": "After completing identity verification with a government-issued ID from your country of residence, your card will be issued immediately."
+      },
+      "cost": {
+        "question": "How much does it cost to open an account?",
+        "answer": "Account creation is completely free."
+      },
+      "tax": {
+        "question": "Is there a tax calculation feature?",
+        "answer": "Currently, this feature is not available. However, we plan to implement tax processing features tailored to each country's tax system in future updates."
+      },
+      "currencies": {
+        "question": "Which cryptocurrencies are supported?",
+        "answer": "Currently, we support USDC and USDT. We plan to add support for Bitcoin SV, ETH, Solana, MATIC, and BSC in the future."
+      },
+      "security": {
+        "question": "How secure is BitcoinPay?",
+        "answer": "We use enterprise-grade security measures to protect your funds and personal information. Your assets remain in self-custody."
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Join the Waitlist",
+    "subtitle": "Be the first to know when we launch",
+    "placeholder": "Enter your email",
+    "button": "Join Waitlist",
+    "success": "Thanks for joining! We'll be in touch soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "personal": {
+      "title": "Personal Inquiries",
+      "description": "For individual users",
+      "button": "Contact Support"
+    },
+    "business": {
+      "title": "Business Inquiries",
+      "description": "For partnerships and corporate",
+      "button": "Contact Sales"
+    }
+  },
+  "contactForm": {
+    "personal": {
+      "title": "Personal Support",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "subjects": {
+        "general": "General Inquiry",
+        "account": "Account Issues",
+        "payment": "Payment Issues",
+        "other": "Other"
+      }
+    },
+    "business": {
+      "title": "Business Inquiry",
+      "companyName": "Company Name",
+      "department": "Department",
+      "name": "Contact Name",
+      "email": "Email",
+      "phone": "Phone",
+      "inquiryType": "Inquiry Type",
+      "message": "Message",
+      "submit": "Send Inquiry",
+      "types": {
+        "partnership": "Partnership",
+        "integration": "API Integration",
+        "enterprise": "Enterprise Solutions",
+        "other": "Other"
+      }
+    },
+    "success": "Your message has been sent successfully.",
+    "error": "Failed to send message. Please try again.",
+    "validation": {
+      "emailRequired": "E-posta adresi gereklidir",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi girin",
+      "nameRequired": "İsim gereklidir"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "BitcoinPay Inc.",
+      "address": "Nihonbashi Mizuno Building 7F, 1-11-12 Nihonbashi Muromachi, Chuo-ku, Tokyo 103-0022"
+    },
+    "sections": {
+      "links": "Bağlantılar",
+      "download": "İndir"
+    },
+    "links": {
+      "terms": "Hizmet Şartları",
+      "privacy": "Gizlilik Politikası"
+    },
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "comingSoon": "Coming Soon",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "backToHome": "Back to Home",
+    "downloadOn": "İndir",
+    "getItOn": "Şuradan edinin"
+  },
+  "terms": {
+    "lastUpdated": "Son güncelleme: Aralık 2024",
+    "sections": {
+      "acceptance": {
+        "title": "1. Şartların Kabulü",
+        "content": "BitcoinPay hizmetlerine erişerek ve bunları kullanarak, bu anlaşmanın şartlarını ve hükümlerini kabul etmiş ve bunlara bağlı kalmayı kabul etmiş olursunuz."
+      },
+      "description": {
+        "title": "2. Hizmet Açıklaması",
+        "content": "BitcoinPay, kullanıcıların Apple Pay ve Google Pay aracılığıyla günlük alışverişler için kripto para (USDC/USDT) harcamalarını sağlayan bir sanal kredi kartı hizmeti sunar."
+      },
+      "eligibility": {
+        "title": "3. Kullanıcı Uygunluğu",
+        "content": "Hizmetlerimizi kullanmak için en az 18 yaşında olmalı ve bağlayıcı bir sözleşme yapma yeteneğine sahip olmalısınız. Kart hizmetlerine erişmeden önce kimlik doğrulamasını (KYC) tamamlamalısınız."
+      },
+      "responsibilities": {
+        "title": "4. Kullanıcı Sorumlulukları",
+        "items": [
+          "Kayıt sırasında doğru ve eksiksiz bilgi sağlamak",
+          "Hesap kimlik bilgilerinizin güvenliğini korumak",
+          "Tüm geçerli yasa ve yönetmeliklere uymak",
+          "Hizmeti herhangi bir yasadışı veya yetkisiz amaç için kullanmamak"
+        ]
+      },
+      "fees": {
+        "title": "5. Ücretler ve Masraflar",
+        "content": "Hesap oluşturma ücretsizdir. İşlem ücretleri ve diğer masraflar uygulanabilir ve herhangi bir işlem tamamlanmadan önce açıklanacaktır."
+      },
+      "liability": {
+        "title": "6. Sorumluluk Sınırlaması",
+        "content": "BitcoinPay, hizmetin kullanımınızdan kaynaklanan dolaylı, arızi, özel, sonuç olarak ortaya çıkan veya cezai hasarlardan sorumlu olmayacaktır."
+      },
+      "changes": {
+        "title": "7. Şartlarda Değişiklikler",
+        "content": "Bu şartları istediğimiz zaman değiştirme hakkını saklı tutarız. Kullanıcılar önemli değişikliklerden haberdar edilecektir."
+      },
+      "contact": {
+        "title": "8. İletişim Bilgileri",
+        "content": "Bu Hizmet Şartları hakkında sorularınız için lütfen iletişim formumuzu kullanarak bizimle iletişime geçin."
+      }
+    }
+  },
+  "privacy": {
+    "lastUpdated": "Son güncelleme: Aralık 2024",
+    "sections": {
+      "collection": {
+        "title": "1. Topladığımız Bilgiler",
+        "content": "Doğrudan bize sağladığınız bilgileri topluyoruz, bunlar şunları içerir:",
+        "items": [
+          "Kişisel kimlik bilgileri (ad, e-posta adresi, telefon numarası)",
+          "KYC doğrulaması için resmi kimlik belgeleri",
+          "İşlem ve ödeme bilgileri",
+          "Cihaz ve kullanım bilgileri"
+        ]
+      },
+      "usage": {
+        "title": "2. Bilgilerinizi Nasıl Kullanıyoruz",
+        "content": "Topladığımız bilgileri şu amaçlarla kullanıyoruz:",
+        "items": [
+          "Hizmetlerimizi sağlamak, sürdürmek ve geliştirmek",
+          "İşlemleri işlemek ve ilgili bilgileri göndermek",
+          "Kimliğinizi doğrulamak ve dolandırıcılığı önlemek",
+          "Yasal yükümlülüklere uymak",
+          "Ürünler, hizmetler ve etkinlikler hakkında sizinle iletişim kurmak"
+        ]
+      },
+      "sharing": {
+        "title": "3. Bilgi Paylaşımı",
+        "content": "Kişisel bilgilerinizi satmıyoruz. Bilgilerinizi şunlarla paylaşabiliriz:",
+        "items": [
+          "Operasyonlarımızda yardımcı olan hizmet sağlayıcılar",
+          "Yasal olarak gerektiğinde düzenleyici otoriteler",
+          "İzninizle iş ortakları"
+        ]
+      },
+      "security": {
+        "title": "4. Veri Güvenliği",
+        "content": "Kişisel bilgilerinizi yetkisiz erişim, değiştirme, ifşa veya imha edilmeye karşı korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz."
+      },
+      "rights": {
+        "title": "5. Haklarınız",
+        "content": "Aşağıdaki haklara sahipsiniz:",
+        "items": [
+          "Kişisel bilgilerinize erişim",
+          "Yanlış verileri düzeltme",
+          "Verilerinizin silinmesini talep etme",
+          "Verilerinizin işlenmesine itiraz etme",
+          "Veri taşınabilirliği"
+        ]
+      },
+      "retention": {
+        "title": "6. Veri Saklama",
+        "content": "Kişisel bilgilerinizi, toplandığı amaçları yerine getirmek ve yasal yükümlülüklere uymak için gerekli olduğu sürece saklarız."
+      },
+      "cookies": {
+        "title": "7. Çerezler ve İzleme",
+        "content": "Tarama etkinlikleriniz hakkında bilgi toplamak ve size daha iyi bir deneyim sunmak için çerezler ve benzeri teknolojiler kullanıyoruz."
+      },
+      "policyChanges": {
+        "title": "8. Bu Politikadaki Değişiklikler",
+        "content": "Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler için sizi yeni politikayı bu sayfada yayınlayarak bilgilendireceğiz."
+      },
+      "contact": {
+        "title": "9. Bizimle İletişime Geçin",
+        "content": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen iletişim formumuzu kullanarak bizimle iletişime geçin."
+      }
+    }
+  }
+}
