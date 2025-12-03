@@ -46,7 +46,7 @@ const scrollToSection = async (href: string) => {
       <div class="flex items-center justify-between h-16 md:h-20">
         <NuxtLink :to="localePath('/')" class="flex items-center">
           <img
-            src="/images/logo/logo-full.svg"
+            src="/logo-full.svg"
             alt="BitcoinPay"
             class="h-8 md:h-10 w-auto"
           />
