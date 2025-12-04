@@ -9,6 +9,13 @@ const dismiss = () => {
   isDismissed.value = true;
 };
 
+const scrollToWaitlist = () => {
+  const element = document.querySelector('#waitlist');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const handleUserActivity = () => {
   isUserActive.value = true;
   
@@ -89,6 +96,7 @@ onUnmounted(() => {
 
             <!-- Waitlist button -->
             <button
+              @click="scrollToWaitlist"
               class="flex-shrink-0 px-5 py-2.5 bg-green-500 hover:bg-green-600 text-gray-900 font-semibold text-sm rounded-lg shadow-lg shadow-green-500/25 transition-all duration-200 hover:shadow-xl hover:shadow-green-500/30 active:scale-95 flex items-center gap-1"
             >
               {{ t('downloadBanner.cta') }}
