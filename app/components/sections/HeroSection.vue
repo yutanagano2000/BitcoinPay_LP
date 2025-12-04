@@ -27,8 +27,8 @@ const isJapanese = computed(() => locale.value === 'ja');
 const headlineClasses = computed(() => {
   if (isJapanese.value) {
     // 日本語の場合、モバイル版で1行表示できるようにサイズを調整
-    // 1行で表示される限界まで大きくする
-    return 'text-[1.3125rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight tracking-tight';
+    // 1行で表示される限界まで大きくする（tracking-tightで文字間を詰めているため、少し大きめでも1行に収まる）
+    return 'text-[1.625rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight tracking-tight';
   }
   return 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight';
 });
