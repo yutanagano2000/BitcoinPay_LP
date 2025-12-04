@@ -65,60 +65,27 @@ const headlineClasses = computed(() => {
           <!-- Mobile Card Section - Only visible on mobile -->
           <div class="lg:hidden mb-4">
             <div class="relative flex justify-center">
-              <div class="relative w-64 sm:w-72">
+              <div class="relative w-64 sm:w-72 pb-8">
                 <!-- Glow effect -->
                 <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-teal-500/15 rounded-2xl blur-2xl" />
 
-                <!-- Stacked cards (pixel-perfect design) -->
-                <div class="relative">
-                  <!-- Black card (back) -->
+                <!-- Stacked cards with SVG -->
+                <div class="relative mb-4">
+                  <!-- White card (back) -->
                   <div
-                    class="absolute top-3 left-3 w-full aspect-[1.586/1] rounded-xl shadow-xl transform rotate-4 opacity-60
-                           bg-black p-4 flex flex-col"
+                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60"
                   >
-                    <!-- Top Right: Logo (right-aligned to card edge) -->
-                    <div class="flex w-full justify-end" style="margin-right: -20px;">
-                      <img src="/images/logo/logo-card-light.svg" alt="BitcoinPay" style="height: 1.155rem;" />
-                    </div>
-                    <!-- Middle Left: Chip -->
-                    <div class="flex-1 flex items-center mt-1">
-                      <img src="/images/cards/chip.svg" alt="Card chip" class="h-auto drop-shadow-sm" style="width: 1.6rem;" />
-                    </div>
-                    <!-- Bottom: Name and VISA -->
-                    <div class="flex items-end justify-between mt-auto">
-                      <div class="text-left">
-                        <p class="text-white text-[9px] font-bold tracking-wide leading-tight">SATOSHI NAKAMOTO</p>
-                        <p class="text-gray-400 text-[7px] tracking-wide leading-tight">BITPOINPAY INC</p>
-                      </div>
-                      <img src="/images/visa-logo.png" alt="VISA" style="height: 0.88rem;" />
-                    </div>
+                    <img src="/Full_white_ver.svg" alt="White card" class="w-full h-auto" />
                   </div>
 
-                  <!-- White card (front) -->
-                  <div
-                    class="relative w-full aspect-[1.586/1] rounded-xl shadow-xl bg-white p-4 flex flex-col"
-                  >
-                    <!-- Top Right: Logo (right-aligned to card edge) -->
-                    <div class="flex justify-end" style="margin-right: -20px;">
-                      <img src="/images/logo/logo-card-dark.svg" alt="BitcoinPay" style="height: 1.155rem;" />
-                    </div>
-                    <!-- Middle Left: Chip -->
-                    <div class="flex-1 flex items-center mt-1">
-                      <img src="/images/cards/chip.svg" alt="Card chip" class="h-auto drop-shadow-sm" style="width: 2.4rem;" />
-                    </div>
-                    <!-- Bottom: Name and VISA -->
-                    <div class="flex items-end justify-between mt-auto">
-                      <div class="text-left">
-                        <p class="text-gray-900 text-[9px] font-bold tracking-wide leading-tight">SATOSHI NAKAMOTO</p>
-                        <p class="text-gray-400 text-[7px] tracking-wide leading-tight">BITPOINPAY INC</p>
-                      </div>
-                      <img src="/images/visa-logo.png" alt="VISA" style="height: 0.88rem;" />
-                    </div>
+                  <!-- Gray card (front) -->
+                  <div class="relative w-full z-10">
+                    <img src="/Full_ver.svg" alt="Gray card" class="w-full h-auto" />
                   </div>
                 </div>
 
                 <!-- Balance info below cards -->
-                <div class="mt-3 bg-gray-800/50 backdrop-blur-sm rounded-xl p-3 border border-gray-700">
+                <div class="mt-6 bg-gray-800/50 backdrop-blur-sm rounded-xl p-3 border border-gray-700">
                   <div class="flex justify-between items-center">
                     <div>
                       <p class="text-gray-500 text-xs">{{ t('hero.balance') }}</p>
@@ -239,56 +206,23 @@ const headlineClasses = computed(() => {
             <!-- Glow effect -->
             <div class="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-teal-500/20 rounded-3xl blur-3xl" />
 
-            <!-- Stacked cards (pixel-perfect design) -->
-            <div class="relative">
-              <!-- Black card (back) -->
+            <!-- Stacked cards with SVG -->
+            <div class="relative mb-8">
+              <!-- White card (back) -->
               <div
-                class="absolute top-6 left-6 w-full aspect-[1.586/1] rounded-2xl shadow-2xl transform rotate-6 opacity-70
-                       bg-black p-6 flex flex-col"
+                class="absolute top-6 left-6 w-full transform rotate-6 opacity-70"
               >
-                <!-- Top Right: Logo (right-aligned to card edge) -->
-                <div class="flex justify-end" style="margin-right: -20px;">
-                  <img src="/images/logo/logo-card-light.svg" alt="BitcoinPay" style="height: 1.444rem;" />
-                </div>
-                <!-- Middle Left: Chip -->
-                <div class="flex-1 flex items-center mt-2">
-                  <img src="/images/cards/chip.svg" alt="Card chip" class="h-auto drop-shadow-sm" style="width: 2.85rem;" />
-                </div>
-                <!-- Bottom: Name and VISA -->
-                <div class="flex items-end justify-between mt-auto">
-                  <div class="text-left">
-                    <p class="text-white text-sm font-bold tracking-wide leading-tight">SATOSHI NAKAMOTO</p>
-                    <p class="text-gray-400 text-[10px] tracking-wide leading-tight">BITPOINPAY INC</p>
-                  </div>
-                  <img src="/images/visa-logo.png" alt="VISA" style="height: 1.43rem;" />
-                </div>
+                <img src="/Full_white_ver.svg" alt="White card" class="w-full h-auto" />
               </div>
 
-              <!-- White card (front) -->
-              <div
-                class="relative w-full aspect-[1.586/1] rounded-2xl shadow-2xl bg-white p-6 flex flex-col transition-transform duration-300"
-              >
-                <!-- Top Right: Logo (right-aligned to card edge) -->
-                <div class="flex justify-end" style="margin-right: -20px;">
-                  <img src="/images/logo/logo-card-dark.svg" alt="BitcoinPay" style="height: 1.444rem;" />
-                </div>
-                <!-- Middle Left: Chip -->
-                <div class="flex-1 flex items-center mt-2">
-                  <img src="/images/cards/chip.svg" alt="Card chip" class="h-auto drop-shadow-sm" style="width: 2.85rem;" />
-                </div>
-                <!-- Bottom: Name and VISA -->
-                <div class="flex items-end justify-between mt-auto">
-                  <div class="text-left">
-                    <p class="text-gray-900 text-sm font-bold tracking-wide leading-tight">SATOSHI NAKAMOTO</p>
-                    <p class="text-gray-400 text-[10px] tracking-wide leading-tight">BITPOINPAY INC</p>
-                  </div>
-                  <img src="/images/visa-logo.png" alt="VISA" style="height: 1.43rem;" />
-                </div>
+              <!-- Gray card (front) -->
+              <div class="relative w-full z-10 transition-transform duration-300">
+                <img src="/Full_ver.svg" alt="Gray card" class="w-full h-auto" />
               </div>
             </div>
 
             <!-- Balance info below cards -->
-            <div class="mt-6 bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 border border-gray-700">
+            <div class="mt-8 bg-gray-800/50 backdrop-blur-sm rounded-2xl p-4 border border-gray-700">
               <div class="flex justify-between items-center">
                 <div>
                   <p class="text-gray-500 text-xs">{{ t('hero.balance') }}</p>
