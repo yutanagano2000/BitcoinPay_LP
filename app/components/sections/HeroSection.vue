@@ -32,6 +32,74 @@ const headlineClasses = computed(() => {
   }
   return 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight';
 });
+
+// SVGインライン埋め込み用
+const grayCardSvg = ref<string>('');
+const whiteCardSvg = ref<string>('');
+
+// SVGのIDをユニーク化し、最適化する関数
+const makeUniqueIds = (svgContent: string, prefix: string): string => {
+  const uniqueId = `${prefix}-${Math.random().toString(36).substring(2, 9)}`;
+  const idMap = new Map<string, string>();
+  
+  // まず、すべてのIDを収集してマッピングを作成
+  svgContent.replace(/id="([^"]+)"/g, (match, id) => {
+    if (!idMap.has(id)) {
+      idMap.set(id, `${id}_${uniqueId}`);
+    }
+    return match;
+  });
+  
+  // ID属性を置き換え
+  let result = svgContent.replace(/id="([^"]+)"/g, (match, id) => {
+    return `id="${idMap.get(id) || id}"`;
+  });
+  
+  // url(#id)パターンを置き換え
+  idMap.forEach((newId, oldId) => {
+    result = result.replace(new RegExp(`url\\(#${oldId}\\)`, 'g'), `url(#${newId})`);
+    result = result.replace(new RegExp(`xlink:href="#${oldId}"`, 'g'), `xlink:href="#${newId}"`);
+    result = result.replace(new RegExp(`href="#${oldId}"`, 'g'), `href="#${newId}"`);
+    result = result.replace(new RegExp(`#${oldId}([^a-zA-Z0-9_-])`, 'g'), `#${newId}$1`);
+  });
+  
+  // SVG要素に最適化設定を追加
+  result = result.replace(
+    /<svg([^>]*)>/,
+    (match, attrs) => {
+      // preserveAspectRatioが既にある場合はそのまま、ない場合は追加
+      if (!attrs.includes('preserveAspectRatio')) {
+        attrs += ' preserveAspectRatio="xMidYMid meet"';
+      }
+      // shape-renderingを追加
+      if (!attrs.includes('shape-rendering')) {
+        attrs += ' shape-rendering="geometricPrecision"';
+      }
+      // width/heightを100%に設定（レスポンシブ対応）
+      attrs = attrs.replace(/width="[^"]*"/, 'width="100%"');
+      attrs = attrs.replace(/height="[^"]*"/, 'height="100%"');
+      return `<svg${attrs} style="width: 100%; height: auto; display: block;">`;
+    }
+  );
+  
+  return result;
+};
+
+onMounted(async () => {
+  try {
+    // SVGファイルを読み込む
+    const [graySvgResponse, whiteSvgResponse] = await Promise.all([
+      $fetch('/Full_ver.svg', { responseType: 'text' }),
+      $fetch('/Full_white_ver.svg', { responseType: 'text' })
+    ]);
+
+    // IDをユニーク化
+    grayCardSvg.value = makeUniqueIds(graySvgResponse, 'gray-card');
+    whiteCardSvg.value = makeUniqueIds(whiteSvgResponse, 'white-card');
+  } catch (error) {
+    console.error('Failed to load SVG files:', error);
+  }
+});
 </script>
 
 <template>
@@ -74,14 +142,12 @@ const headlineClasses = computed(() => {
                   <!-- White card (back) -->
                   <div
                     class="absolute top-3 left-3 w-full transform rotate-4 opacity-60"
-                  >
-                    <img src="/Full_white_ver.svg" alt="White card" class="w-full h-auto" />
-                  </div>
+                    v-if="whiteCardSvg"
+                    v-html="whiteCardSvg"
+                  />
 
                   <!-- Gray card (front) -->
-                  <div class="relative w-full z-10">
-                    <img src="/Full_ver.svg" alt="Gray card" class="w-full h-auto" />
-                  </div>
+                  <div class="relative w-full z-10" v-if="grayCardSvg" v-html="grayCardSvg" />
                 </div>
 
                 <!-- Balance info below cards -->
@@ -211,14 +277,12 @@ const headlineClasses = computed(() => {
               <!-- White card (back) -->
               <div
                 class="absolute top-6 left-6 w-full transform rotate-6 opacity-70"
-              >
-                <img src="/Full_white_ver.svg" alt="White card" class="w-full h-auto" />
-              </div>
+                v-if="whiteCardSvg"
+                v-html="whiteCardSvg"
+              />
 
               <!-- Gray card (front) -->
-              <div class="relative w-full z-10 transition-transform duration-300">
-                <img src="/Full_ver.svg" alt="Gray card" class="w-full h-auto" />
-              </div>
+              <div class="relative w-full z-10 transition-transform duration-300" v-if="grayCardSvg" v-html="grayCardSvg" />
             </div>
 
             <!-- Balance info below cards -->
@@ -244,3 +308,26 @@ const headlineClasses = computed(() => {
     </div>
   </section>
 </template>
+
+<style scoped>
+/* インラインSVGの高品質レンダリング */
+:deep(svg) {
+  width: 100%;
+  height: auto;
+  display: block;
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  /* GPUアクセラレーションを有効化 */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+}
+</style>
