@@ -33,19 +33,11 @@ const headlineClasses = computed(() => {
   return 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight';
 });
 
-// SVGインライン埋め込み用（デスクトップ版のみインライン化、モバイルはimgタグで軽量化）
+// SVGインライン埋め込み用（モバイルとデスクトップの両方でインライン化して高画質化）
 const grayCardSvgDesktop = ref<string>('');
 const whiteCardSvgDesktop = ref<string>('');
-
-// デバイス判定（モバイルかどうか）
-const isMobile = ref(false);
-
-// モバイル判定用の関数
-const checkMobile = () => {
-  if (typeof window !== 'undefined') {
-    isMobile.value = window.innerWidth < 1024;
-  }
-};
+const grayCardSvgMobile = ref<string>('');
+const whiteCardSvgMobile = ref<string>('');
 
 // 正規表現の特殊文字をエスケープするヘルパー関数
 const escapeRegExp = (string: string): string => {
@@ -134,35 +126,19 @@ return result;
 
 // クライアントマウント後にSVGを読み込んでカードを描画
 onMounted(async () => {
-  // モバイル判定
-  checkMobile();
-  
-  // デスクトップ版のSVGはrequestIdleCallbackで遅延読み込み（モバイルはimgタグで軽量化）
-  const loadDesktopSvgs = async () => {
-    try {
-      const [graySvgResponse, whiteSvgResponse] = await Promise.all([
-        $fetch('/Full_ver_gray.svg', { responseType: 'text' }),
-        $fetch('/Full_white_ver.svg', { responseType: 'text' })
-      ]);
+  try {
+    const [graySvgResponse, whiteSvgResponse] = await Promise.all([
+      $fetch('/Full_ver_gray.svg', { responseType: 'text' }),
+      $fetch('/Full_white_ver.svg', { responseType: 'text' })
+    ]);
 
-      grayCardSvgDesktop.value = makeUniqueIds(graySvgResponse, 'desktop-gray');
-      whiteCardSvgDesktop.value = makeUniqueIds(whiteSvgResponse, 'desktop-white');
-    } catch (error) {
-      console.error('Failed to load SVG files:', error);
-    }
-  };
-
-  // モバイルでは遅延読み込み、デスクトップでは即時読み込み
-  if (isMobile.value) {
-    // モバイルではユーザーが最初の画面をすばやく見れるよう遅延
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => loadDesktopSvgs());
-    } else {
-      setTimeout(() => loadDesktopSvgs(), 100);
-    }
-  } else {
-    // デスクトップでは即座に読み込み
-    await loadDesktopSvgs();
+    // モバイル版とデスクトップ版で別々のIDを付与（ID重複を防ぐ）
+    grayCardSvgMobile.value = makeUniqueIds(graySvgResponse, 'mobile-gray');
+    whiteCardSvgMobile.value = makeUniqueIds(whiteSvgResponse, 'mobile-white');
+    grayCardSvgDesktop.value = makeUniqueIds(graySvgResponse, 'desktop-gray');
+    whiteCardSvgDesktop.value = makeUniqueIds(whiteSvgResponse, 'desktop-white');
+  } catch (error) {
+    console.error('Failed to load SVG files:', error);
   }
 });
 </script>
@@ -195,29 +171,24 @@ onMounted(async () => {
             <span class="gradient-text">{{ t('hero.title') }}</span>
           </h1>
 
-          <!-- Mobile Card Section - Only visible on mobile (imgタグで軽量化) -->
+          <!-- Mobile Card Section - Only visible on mobile (インラインSVGで高画質化) -->
           <div class="lg:hidden mb-4">
             <div class="relative flex justify-center">
-              <div class="relative w-64 sm:w-72 pb-8">
-                <!-- Stacked cards with img tags (モバイル向け軽量化) -->
+              <div class="relative w-64 sm:w-72 pb-8 mobile-card-container">
+                <!-- Stacked cards with inline SVG (高画質レンダリング) -->
                 <div class="relative mb-4">
                   <!-- White card (back) -->
-                  <img
-                    src="/Full_white_ver.svg"
-                    alt=""
-                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60"
-                    loading="lazy"
-                    decoding="async"
+                  <div
+                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60 white-card-mobile"
+                    v-if="whiteCardSvgMobile"
+                    v-html="whiteCardSvgMobile"
                   />
 
                   <!-- Gray card (front) -->
-                  <img
-                    src="/Full_ver_gray.svg"
-                    alt="BitcoinPay Card"
-                    class="relative w-full z-10"
-                    loading="eager"
-                    fetchpriority="high"
-                    decoding="async"
+                  <div
+                    class="relative w-full z-10 gray-card-mobile"
+                    v-if="grayCardSvgMobile"
+                    v-html="grayCardSvgMobile"
                   />
                 </div>
 
@@ -381,23 +352,70 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-/* デスクトップ版：インラインSVGの高品質レンダリング */
+/* 共通：インラインSVGの高品質レンダリング */
+:deep(svg) {
+  width: 100%;
+  height: auto;
+  display: block;
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* SVG内の<image>要素の高品質レンダリング */
+:deep(svg image) {
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* SVG内のパターン要素の最適化 */
+:deep(svg pattern) {
+  image-rendering: auto;
+  shape-rendering: geometricPrecision;
+}
+
+/* SVG内のパス要素の高品質レンダリング */
+:deep(svg path),
+:deep(svg rect),
+:deep(svg circle),
+:deep(svg g) {
+  shape-rendering: geometricPrecision;
+}
+
+/* モバイル版：カードコンテナの高品質レンダリング設定 */
+.mobile-card-container {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.mobile-card-container :deep(svg) {
+  shape-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.mobile-card-container :deep(svg image) {
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+/* モバイル版グレーカード */
+.gray-card-mobile :deep(svg) {
+  filter: none;
+}
+
+/* モバイル版白カード */
+.white-card-mobile :deep(svg) {
+  shape-rendering: auto;
+}
+
+/* デスクトップ版：白カード専用のレンダリング設定 */
 @media (min-width: 1024px) {
-  :deep(svg) {
-    width: 100%;
-    height: auto;
-    display: block;
-    shape-rendering: geometricPrecision;
-    text-rendering: optimizeLegibility;
-    image-rendering: auto;
-  }
-
-  /* SVG内の<image>要素の高品質レンダリング */
-  :deep(svg image) {
-    image-rendering: auto;
-  }
-
-  /* 白いカード専用のレンダリング設定 */
   .white-card-container :deep(svg) {
     shape-rendering: auto;
   }

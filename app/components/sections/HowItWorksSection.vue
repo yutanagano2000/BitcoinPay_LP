@@ -84,7 +84,7 @@ const steps = computed(() => [
               <!-- App main screen -->
               <div class="relative w-40 sm:w-48 animate-float">
                 <img
-                  src="/images/app_ui01.jpg"
+                  src="/images/S__7274513.avif"
                   alt="BitcoinPay アプリ メイン画面"
                   class="w-full rounded-2xl shadow-2xl border border-gray-700"
                   loading="lazy"
@@ -97,7 +97,7 @@ const steps = computed(() => [
               <!-- Card management screen -->
               <div class="relative w-40 sm:w-48 mt-8 animate-float" style="animation-delay: 0.5s;">
                 <img
-                  src="/images/app_ui02.jpg"
+                  src="/images/S__7274514.avif"
                   alt="BitcoinPay アプリ 明細画面"
                   class="w-full rounded-2xl shadow-2xl border border-gray-700"
                   loading="lazy"

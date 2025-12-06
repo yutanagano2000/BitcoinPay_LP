@@ -211,7 +211,7 @@ body {
   }
 }
 
-/* Shimmer Effect */
+/* Shimmer Effect - モバイルでは無効化 */
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -222,12 +222,30 @@ body {
 }
 
 .animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 2s infinite;
+  background: none; /* モバイルはデフォルトで無効 */
+  animation: none;
+}
+
+@media (min-width: 1024px) {
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
+
+/* クリティカルレンダリングパス最適化 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

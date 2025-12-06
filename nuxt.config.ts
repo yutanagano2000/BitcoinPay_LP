@@ -7,6 +7,14 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
+  // パフォーマンス最適化
+  experimental: {
+    // クリティカルCSSをHTMLにインライン化（レンダリングブロック解消）
+    inlineSSRStyles: true,
+    // ペイロードの最適化
+    payloadExtraction: true,
+  },
+
   modules: [
     '@nuxt/ui',
     '@nuxtjs/i18n',
@@ -16,6 +24,21 @@ export default defineNuxtConfig({
   ],
 
   css: ['~/assets/css/main.css'],
+
+  // Viteビルド最適化
+  vite: {
+    css: {
+      devSourcemap: false,
+    },
+    build: {
+      // CSSコード分割を最適化
+      cssCodeSplit: true,
+      // 圧縮設定
+      minify: 'esbuild',
+      // チャンクサイズ警告閾値
+      chunkSizeWarningLimit: 500,
+    },
+  },
 
   i18n: {
     locales: [
@@ -76,8 +99,19 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        // DNSプリフェッチ（外部リソースへの接続を高速化）
+        { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
       ],
     },
+  },
+
+  // ルートレンダリング最適化
+  routeRules: {
+    // 静的ページはプリレンダリング
+    '/': { prerender: true },
+    '/ja': { prerender: true },
+    '/en': { prerender: true },
   },
 
   colorMode: {
@@ -94,6 +128,14 @@ export default defineNuxtConfig({
   nitro: {
     externals: {
       inline: ['@supabase/supabase-js'],
+    },
+    // 圧縮を有効化
+    compressPublicAssets: true,
+    // 静的アセットのキャッシュ設定
+    routeRules: {
+      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+      '/images/**': { headers: { 'cache-control': 'public, max-age=86400' } },
+      '/*.svg': { headers: { 'cache-control': 'public, max-age=86400' } },
     },
   },
 });
