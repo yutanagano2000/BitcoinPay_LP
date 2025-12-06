@@ -222,6 +222,11 @@
     "downloadOn": "下載於",
     "getItOn": "獲取於"
   },
+  "downloadBanner": {
+    "tagline": "加密支付，簡單便捷",
+    "cta": "加入等候名單",
+    "close": "關閉橫幅"
+  },
   "terms": {
     "lastUpdated": "最後更新：2024年12月",
     "sections": {

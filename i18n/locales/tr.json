@@ -215,12 +215,17 @@
     "copyright": "Tüm hakları saklıdır."
   },
   "common": {
-    "comingSoon": "Coming Soon",
-    "learnMore": "Learn More",
-    "getStarted": "Get Started",
-    "backToHome": "Back to Home",
+    "comingSoon": "Yakında",
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başla",
+    "backToHome": "Ana Sayfaya Dön",
     "downloadOn": "İndir",
     "getItOn": "Şuradan edinin"
+  },
+  "downloadBanner": {
+    "tagline": "Kripto ödemeler, basitleştirildi",
+    "cta": "Bekleme Listesi",
+    "close": "Afişi kapat"
   },
   "terms": {
     "lastUpdated": "Son güncelleme: Aralık 2024",

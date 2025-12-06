@@ -33,33 +33,29 @@ const headlineClasses = computed(() => {
   return 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 lg:mb-6 leading-tight';
 });
 
-// SVGインライン埋め込み用（モバイルとデスクトップの両方でインライン化して高画質化）
-const grayCardSvgDesktop = ref<string>('');
-const whiteCardSvgDesktop = ref<string>('');
-const grayCardSvgMobile = ref<string>('');
-const whiteCardSvgMobile = ref<string>('');
+// カードのアニメーション表示状態
+const isCardsLoaded = ref(false);
 
 // 正規表現の特殊文字をエスケープするヘルパー関数
-const escapeRegExp = (string: string): string => {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-};
+function escapeRegExp(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 // SVGのIDをユニーク化し、最適化する関数
-const makeUniqueIds = (svgContent: string, prefix: string): string => {
+function processCardSvg(svgContent: string, prefix: string): string {
   const idMap = new Map<string, string>();
   
   // まず、すべてのIDを収集してマッピングを作成
-  svgContent.replace(/id="([^"]+)"/g, (match, id) => {
+  svgContent.replace(/id="([^"]+)"/g, (_match, id) => {
     if (!idMap.has(id)) {
-      // プレフィックスベースで決定論的にIDを付与（SSR/CSRで同じ結果になるようにする）
       idMap.set(id, `${prefix}_${id}`);
     }
-    return match;
+    return _match;
   });
   
   let result = svgContent;
   
-  // 先にurl(#id)パターンを置き換え（ID属性を変更する前に行う）
+  // 先にurl(#id)パターンを置き換え
   idMap.forEach((newId, oldId) => {
     const escapedOldId = escapeRegExp(oldId);
     result = result.replace(new RegExp(`url\\(#${escapedOldId}\\)`, 'g'), `url(#${newId})`);
@@ -68,21 +64,19 @@ const makeUniqueIds = (svgContent: string, prefix: string): string => {
   });
   
   // 次にID属性を置き換え
-  result = result.replace(/id="([^"]+)"/g, (match, id) => {
+  result = result.replace(/id="([^"]+)"/g, (_match, id) => {
     return `id="${idMap.get(id) || id}"`;
   });
   
-  // SVG内の<image>要素に最適化設定を追加（PNG画像の高品質レンダリング）
+  // SVG内の<image>要素に最適化設定を追加
   result = result.replace(
     /<image([^>]*)>/g,
-    (match, attrs) => {
-      // image-renderingを追加（高品質レンダリング）
+    (_match, attrs) => {
       if (!attrs.includes('image-rendering')) {
         attrs += ' image-rendering="auto"';
       } else {
         attrs = attrs.replace(/image-rendering="[^"]*"/, 'image-rendering="auto"');
       }
-      // preserveAspectRatioを追加（アスペクト比を維持）
       if (!attrs.includes('preserveAspectRatio')) {
         attrs += ' preserveAspectRatio="xMidYMid meet"';
       }
@@ -93,8 +87,7 @@ const makeUniqueIds = (svgContent: string, prefix: string): string => {
   // SVG内の<pattern>要素に最適化設定を追加
   result = result.replace(
     /<pattern([^>]*)>/g,
-    (match, attrs) => {
-      // patternContentUnitsが既にある場合はそのまま、ない場合は追加
+    (_match, attrs) => {
       if (!attrs.includes('patternContentUnits')) {
         attrs += ' patternContentUnits="objectBoundingBox"';
       }
@@ -102,41 +95,49 @@ const makeUniqueIds = (svgContent: string, prefix: string): string => {
     }
   );
   
-// SVG要素に最適化設定を追加
-result = result.replace(
-  /<svg([^>]*)>/,
-  (match, attrs) => {
-    // preserveAspectRatioが既にある場合はそのまま、ない場合は追加
-    if (!attrs.includes('preserveAspectRatio')) {
-      attrs += ' preserveAspectRatio="xMidYMid meet"';
+  // SVG要素に最適化設定を追加
+  result = result.replace(
+    /<svg([^>]*)>/,
+    (_match, attrs) => {
+      if (!attrs.includes('preserveAspectRatio')) {
+        attrs += ' preserveAspectRatio="xMidYMid meet"';
+      }
+      if (!attrs.includes('shape-rendering')) {
+        attrs += ' shape-rendering="geometricPrecision"';
+      }
+      attrs = attrs.replace(/width="[^"]*"/, 'width="100%"');
+      attrs = attrs.replace(/height="[^"]*"/, 'height="100%"');
+      return `<svg${attrs} style="width: 100%; height: auto; display: block;">`;
     }
-    // shape-renderingを追加
-    if (!attrs.includes('shape-rendering')) {
-      attrs += ' shape-rendering="geometricPrecision"';
-    }
-    // width/heightを100%に設定（レスポンシブ対応）
-    attrs = attrs.replace(/width="[^"]*"/, 'width="100%"');
-    attrs = attrs.replace(/height="[^"]*"/, 'height="100%"');
-    return `<svg${attrs} style="width: 100%; height: auto; display: block;">`;
-  }
-);
+  );
 
-return result;
-};
+  return result;
+}
+
+// SVGインライン埋め込み用
+const grayCardSvgDesktop = ref<string>('');
+const whiteCardSvgDesktop = ref<string>('');
+const grayCardSvgMobile = ref<string>('');
+const whiteCardSvgMobile = ref<string>('');
 
 // クライアントマウント後にSVGを読み込んでカードを描画
 onMounted(async () => {
   try {
     const [graySvgResponse, whiteSvgResponse] = await Promise.all([
-      $fetch('/Full_ver_gray.svg', { responseType: 'text' }),
-      $fetch('/Full_white_ver.svg', { responseType: 'text' })
+      fetch('/Full_ver_gray.svg').then(r => r.text()),
+      fetch('/Full_white_ver.svg').then(r => r.text())
     ]);
 
-    // モバイル版とデスクトップ版で別々のIDを付与（ID重複を防ぐ）
-    grayCardSvgMobile.value = makeUniqueIds(graySvgResponse, 'mobile-gray');
-    whiteCardSvgMobile.value = makeUniqueIds(whiteSvgResponse, 'mobile-white');
-    grayCardSvgDesktop.value = makeUniqueIds(graySvgResponse, 'desktop-gray');
-    whiteCardSvgDesktop.value = makeUniqueIds(whiteSvgResponse, 'desktop-white');
+    // モバイル版とデスクトップ版で別々のIDを付与
+    grayCardSvgMobile.value = processCardSvg(graySvgResponse, 'mobile-gray');
+    whiteCardSvgMobile.value = processCardSvg(whiteSvgResponse, 'mobile-white');
+    grayCardSvgDesktop.value = processCardSvg(graySvgResponse, 'desktop-gray');
+    whiteCardSvgDesktop.value = processCardSvg(whiteSvgResponse, 'desktop-white');
+    
+    // カードロード後にアニメーションを開始
+    requestAnimationFrame(() => {
+      isCardsLoaded.value = true;
+    });
   } catch (error) {
     console.error('Failed to load SVG files:', error);
   }
@@ -174,20 +175,27 @@ onMounted(async () => {
           <!-- Mobile Card Section - Only visible on mobile (インラインSVGで高画質化) -->
           <div class="lg:hidden mb-4">
             <div class="relative flex justify-center">
-              <div class="relative w-64 sm:w-72 pb-8 mobile-card-container">
+              <div 
+                class="relative w-64 sm:w-72 pb-8 mobile-card-container card-fade-in"
+                :class="{ 'card-visible': isCardsLoaded && grayCardSvgMobile }"
+              >
+                <!-- Glow effect -->
+                <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-teal-500/15 rounded-2xl blur-2xl" />
+
                 <!-- Stacked cards with inline SVG (高画質レンダリング) -->
-                <div class="relative mb-4">
+                <!-- アスペクト比を維持してスペースを事前に確保 -->
+                <div class="relative mb-4" style="min-height: 160px;">
                   <!-- White card (back) -->
                   <div
-                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60 white-card-mobile"
-                    v-if="whiteCardSvgMobile"
+                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60 white-card-mobile card-slide-in card-delay-1"
+                    :class="{ 'card-slide-visible': isCardsLoaded && whiteCardSvgMobile }"
                     v-html="whiteCardSvgMobile"
                   />
 
                   <!-- Gray card (front) -->
                   <div
-                    class="relative w-full z-10 gray-card-mobile"
-                    v-if="grayCardSvgMobile"
+                    class="relative w-full z-10 gray-card-mobile card-slide-in"
+                    :class="{ 'card-slide-visible': isCardsLoaded && grayCardSvgMobile }"
                     v-html="grayCardSvgMobile"
                   />
                 </div>
@@ -308,7 +316,8 @@ onMounted(async () => {
           @mouseleave="handleMouseLeave"
         >
           <div
-            class="relative w-80 sm:w-96 md:w-[420px] card-3d"
+            class="relative w-80 sm:w-96 md:w-[420px] card-3d card-fade-in"
+            :class="{ 'card-visible': isCardsLoaded && grayCardSvgDesktop }"
             :style="tiltStyle"
           >
             <!-- Glow effect -->
@@ -318,13 +327,19 @@ onMounted(async () => {
             <div class="relative mb-8">
               <!-- White card (back) -->
               <div
-                class="absolute top-6 left-6 w-full transform rotate-6 opacity-70 white-card-container"
+                class="absolute top-6 left-6 w-full transform rotate-6 opacity-70 white-card-container card-slide-in card-delay-1"
+                :class="{ 'card-slide-visible': isCardsLoaded && whiteCardSvgDesktop }"
                 v-if="whiteCardSvgDesktop"
                 v-html="whiteCardSvgDesktop"
               />
 
               <!-- Gray card (front) -->
-              <div class="relative w-full z-10 transition-transform duration-300 gray-card-container" v-if="grayCardSvgDesktop" v-html="grayCardSvgDesktop" />
+              <div 
+                class="relative w-full z-10 transition-transform duration-300 gray-card-container card-slide-in"
+                :class="{ 'card-slide-visible': isCardsLoaded && grayCardSvgDesktop }"
+                v-if="grayCardSvgDesktop" 
+                v-html="grayCardSvgDesktop" 
+              />
             </div>
 
             <!-- Balance info below cards -->
@@ -419,5 +434,48 @@ onMounted(async () => {
   .white-card-container :deep(svg) {
     shape-rendering: auto;
   }
+}
+
+/* カードフェードイン・スライドインアニメーション */
+/* コンテナ全体でフェードイン（カードが透けて見えないようにする） */
+.card-fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.card-fade-in.card-visible {
+  opacity: 1;
+}
+
+/* 個々のカードはスライドのみ（透明度変化なし） */
+.card-slide-in {
+  transform: translateX(-30px);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-slide-in.card-slide-visible {
+  transform: translateX(0);
+}
+
+/* 白カード（背面）は回転を維持しつつスライド */
+.white-card-mobile.card-slide-in {
+  transform: translateX(-30px) rotate(4deg);
+}
+
+.white-card-mobile.card-slide-in.card-slide-visible {
+  transform: translateX(0) rotate(4deg);
+}
+
+.white-card-container.card-slide-in {
+  transform: translateX(-30px) rotate(6deg);
+}
+
+.white-card-container.card-slide-in.card-slide-visible {
+  transform: translateX(0) rotate(6deg);
+}
+
+/* アニメーション遅延（カードの重なり順に表示） */
+.card-delay-1 {
+  transition-delay: 0.1s;
 }
 </style>

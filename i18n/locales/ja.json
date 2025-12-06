@@ -224,7 +224,8 @@
   },
   "downloadBanner": {
     "tagline": "1分で登録！すぐにお買い物",
-    "cta": "事前登録"
+    "cta": "事前登録",
+    "close": "バナーを閉じる"
   },
   "terms": {
     "lastUpdated": "最終更新日: 2024年12月",

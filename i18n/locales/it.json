@@ -222,6 +222,11 @@
     "downloadOn": "Scarica su",
     "getItOn": "Disponibile su"
   },
+  "downloadBanner": {
+    "tagline": "Pagamenti crypto, semplificati",
+    "cta": "Iscriviti alla lista",
+    "close": "Chiudi banner"
+  },
   "terms": {
     "lastUpdated": "Ultimo aggiornamento: Dicembre 2024",
     "sections": {

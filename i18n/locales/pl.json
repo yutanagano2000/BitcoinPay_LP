@@ -222,6 +222,11 @@
     "downloadOn": "Pobierz z",
     "getItOn": "Pobierz z"
   },
+  "downloadBanner": {
+    "tagline": "Płatności krypto, uproszczone",
+    "cta": "Dołącz do listy",
+    "close": "Zamknij baner"
+  },
   "terms": {
     "lastUpdated": "Ostatnia aktualizacja: Grudzień 2024",
     "sections": {

@@ -224,7 +224,8 @@
   },
   "downloadBanner": {
     "tagline": "Crypto payments, simplified",
-    "cta": "Join Waitlist"
+    "cta": "Join Waitlist",
+    "close": "Close banner"
   },
   "terms": {
     "lastUpdated": "Last updated: December 2024",

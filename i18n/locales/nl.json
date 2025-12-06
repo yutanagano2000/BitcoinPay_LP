@@ -222,6 +222,11 @@
     "downloadOn": "Download op",
     "getItOn": "Verkrijgbaar op"
   },
+  "downloadBanner": {
+    "tagline": "Crypto betalingen, vereenvoudigd",
+    "cta": "Wachtlijst",
+    "close": "Banner sluiten"
+  },
   "terms": {
     "lastUpdated": "Laatst bijgewerkt: December 2024",
     "sections": {

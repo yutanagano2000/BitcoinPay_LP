@@ -222,6 +222,11 @@
     "downloadOn": "Herunterladen bei",
     "getItOn": "Jetzt bei"
   },
+  "downloadBanner": {
+    "tagline": "Krypto-Zahlungen, vereinfacht",
+    "cta": "Warteliste beitreten",
+    "close": "Banner schließen"
+  },
   "terms": {
     "lastUpdated": "Zuletzt aktualisiert: Dezember 2024",
     "sections": {

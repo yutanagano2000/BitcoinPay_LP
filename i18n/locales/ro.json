@@ -222,6 +222,11 @@
     "downloadOn": "Descarcă pe",
     "getItOn": "Obține pe"
   },
+  "downloadBanner": {
+    "tagline": "Plăți crypto, simplificate",
+    "cta": "Înscrie-te pe listă",
+    "close": "Închide bannerul"
+  },
   "terms": {
     "lastUpdated": "Ultima actualizare: Decembrie 2024",
     "sections": {

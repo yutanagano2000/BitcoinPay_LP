@@ -222,6 +222,11 @@
     "downloadOn": "Unduh di",
     "getItOn": "Dapatkan di"
   },
+  "downloadBanner": {
+    "tagline": "Pembayaran kripto, lebih mudah",
+    "cta": "Daftar Tunggu",
+    "close": "Tutup banner"
+  },
   "terms": {
     "lastUpdated": "Terakhir diperbarui: Desember 2024",
     "sections": {
