@@ -3,6 +3,7 @@ const { t } = useI18n();
 
 const isDismissed = ref(false);
 const isUserActive = ref(true);
+const showBannerContent = ref(false);
 let inactivityTimeout: ReturnType<typeof setTimeout> | null = null;
 
 const dismiss = () => {
@@ -40,6 +41,16 @@ onMounted(() => {
   window.addEventListener('touchstart', handleUserActivity, { passive: true });
   window.addEventListener('keydown', handleUserActivity, { passive: true });
   window.addEventListener('mousemove', handleUserActivity, { passive: true });
+
+  // バナー本体（中身）はアイドルタイムに遅延描画し、高さだけ先に確保する
+  const show = () => {
+    showBannerContent.value = true;
+  };
+  if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+    (window as any).requestIdleCallback(show);
+  } else {
+    setTimeout(show, 800);
+  }
 });
 
 onUnmounted(() => {
@@ -69,8 +80,12 @@ onUnmounted(() => {
     >
       <!-- Banner content -->
       <div class="bg-gray-900 backdrop-blur-xl border-t border-gray-800 shadow-2xl">
-        <div class="container mx-auto px-4 banner-padding safe-area-padding flex items-center" style="min-height: calc(46px + env(safe-area-inset-bottom, 0));">
-          <div class="flex items-center justify-between gap-4 w-full">
+        <!-- 高さは常に確保しつつ、中身は後から描画 -->
+        <div
+          class="container mx-auto px-4 banner-padding safe-area-padding flex items-center"
+          style="min-height: calc(46px + env(safe-area-inset-bottom, 0));"
+        >
+          <div v-if="showBannerContent" class="flex items-center justify-between gap-4 w-full">
             <!-- Close button -->
             <button
               @click="dismiss"
@@ -105,6 +120,12 @@ onUnmounted(() => {
               </svg>
             </button>
           </div>
+          <!-- プレースホルダー（スペースのみ確保） -->
+          <div
+            v-else
+            class="w-full"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </div>

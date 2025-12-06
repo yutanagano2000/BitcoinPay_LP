@@ -36,6 +36,8 @@ const headlineClasses = computed(() => {
 // SVGインライン埋め込み用
 const grayCardSvg = ref<string>('');
 const whiteCardSvg = ref<string>('');
+// モバイルでのカード描画を少し遅延させて、LCPをテキスト主体にするためのフラグ
+const showMobileCard = ref(true);
 
 // SVGのIDをユニーク化し、最適化する関数
 const makeUniqueIds = (svgContent: string, prefix: string): string => {
@@ -132,6 +134,21 @@ if (heroSvgs.value) {
   grayCardSvg.value = makeUniqueIds(heroSvgs.value.gray, 'gray-card');
   whiteCardSvg.value = makeUniqueIds(heroSvgs.value.white, 'white-card');
 }
+
+// クライアント側でのみ、モバイルのカード描画をアイドルタイムに遅延
+if (process.client) {
+  if (window.innerWidth < 1024) {
+    showMobileCard.value = false;
+    const show = () => {
+      showMobileCard.value = true;
+    };
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(show);
+    } else {
+      setTimeout(show, 600);
+    }
+  }
+}
 </script>
 
 <template>
@@ -151,7 +168,7 @@ if (heroSvgs.value) {
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div
           ref="heroContent"
-          class="text-center lg:text-left animate-on-scroll-left"
+          class="text-center lg:text-left lg:animate-on-scroll-left"
           :class="{ 'is-visible': isHeroVisible }"
         >
           <UBadge color="primary" variant="subtle" size="lg" class="mb-4 lg:mb-6">
@@ -162,8 +179,10 @@ if (heroSvgs.value) {
             <span class="gradient-text">{{ t('hero.title') }}</span>
           </h1>
 
-          <!-- Mobile Card Section - Only visible on mobile -->
-          <div class="lg:hidden mb-4">
+          <!-- Mobile Card Section - Only visible on mobile
+               モバイルではカードSVGが重いため、初期レンダリングではテキストを優先し、
+               メインスレッドがアイドルになってからカードを描画する -->
+          <div class="lg:hidden mb-4" v-if="showMobileCard">
             <div class="relative flex justify-center">
               <div class="relative w-64 sm:w-72 pb-8 mobile-card-container">
                 <!-- Glow effect -->
