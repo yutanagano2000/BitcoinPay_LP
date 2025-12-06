@@ -59,49 +59,72 @@ body {
   @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
 }
 
-/* Scroll Animations */
+/* Scroll Animations - デスクトップのみ（モバイルはパフォーマンス優先で無効化） */
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animate-on-scroll.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .animate-on-scroll-left {
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animate-on-scroll-left.is-visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: none;
 }
 
 .animate-on-scroll-right {
-  opacity: 0;
-  transform: translateX(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animate-on-scroll-right.is-visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: none;
 }
 
 .animate-on-scroll-scale {
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  opacity: 1;
+  transform: none;
 }
 
-.animate-on-scroll-scale.is-visible {
-  opacity: 1;
-  transform: scale(1);
+/* デスクトップでのみスクロールアニメーションを有効化 */
+@media (min-width: 1024px) {
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-on-scroll-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .animate-on-scroll-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .animate-on-scroll-scale {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Stagger animation delays */
@@ -135,13 +158,20 @@ body {
   animation-play-state: paused;
 }
 
-/* Parallax Background */
+/* Parallax Background - モバイルでは無効化 */
 .parallax-bg {
-  will-change: transform;
-  transition: transform 0.1s ease-out;
+  will-change: auto; /* モバイルはwill-changeを無効化してGPUメモリ節約 */
+  transition: none;
 }
 
-/* Pulse Animation for CTA */
+@media (min-width: 1024px) {
+  .parallax-bg {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+  }
+}
+
+/* Pulse Animation for CTA - モバイルでは軽量化 */
 @keyframes pulse-glow {
   0%, 100% {
     box-shadow: 0 0 0 0 rgba(247, 147, 26, 0.4);
@@ -152,10 +182,16 @@ body {
 }
 
 .animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+  animation: none; /* モバイルはデフォルトで無効 */
 }
 
-/* Float Animation */
+@media (min-width: 1024px) {
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+/* Float Animation - モバイルでは無効化 */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -166,7 +202,13 @@ body {
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: none; /* モバイルはデフォルトで無効 */
+}
+
+@media (min-width: 1024px) {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
 }
 
 /* Shimmer Effect */
