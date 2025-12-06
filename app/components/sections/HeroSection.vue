@@ -63,6 +63,36 @@ const makeUniqueIds = (svgContent: string, prefix: string): string => {
     result = result.replace(new RegExp(`#${oldId}([^a-zA-Z0-9_-])`, 'g'), `#${newId}$1`);
   });
   
+  // SVG内の<image>要素に最適化設定を追加（PNG画像の高品質レンダリング）
+  result = result.replace(
+    /<image([^>]*)>/g,
+    (match, attrs) => {
+      // image-renderingを追加（高品質レンダリング）
+      if (!attrs.includes('image-rendering')) {
+        attrs += ' image-rendering="auto"';
+      } else {
+        attrs = attrs.replace(/image-rendering="[^"]*"/, 'image-rendering="auto"');
+      }
+      // preserveAspectRatioを追加（アスペクト比を維持）
+      if (!attrs.includes('preserveAspectRatio')) {
+        attrs += ' preserveAspectRatio="xMidYMid meet"';
+      }
+      return `<image${attrs}>`;
+    }
+  );
+  
+  // SVG内の<pattern>要素に最適化設定を追加
+  result = result.replace(
+    /<pattern([^>]*)>/g,
+    (match, attrs) => {
+      // patternContentUnitsが既にある場合はそのまま、ない場合は追加
+      if (!attrs.includes('patternContentUnits')) {
+        attrs += ' patternContentUnits="objectBoundingBox"';
+      }
+      return `<pattern${attrs}>`;
+    }
+  );
+  
   // SVG要素に最適化設定を追加
   result = result.replace(
     /<svg([^>]*)>/,
@@ -89,13 +119,35 @@ onMounted(async () => {
   try {
     // SVGファイルを読み込む
     const [graySvgResponse, whiteSvgResponse] = await Promise.all([
-      $fetch('/Full_ver.svg', { responseType: 'text' }),
+      $fetch('/Full_ver_gray.svg', { responseType: 'text' }),
       $fetch('/Full_white_ver.svg', { responseType: 'text' })
     ]);
 
     // IDをユニーク化
     grayCardSvg.value = makeUniqueIds(graySvgResponse, 'gray-card');
-    whiteCardSvg.value = makeUniqueIds(whiteSvgResponse, 'white-card');
+    
+    // 白いカード用に特別な最適化を適用
+    let whiteSvg = makeUniqueIds(whiteSvgResponse, 'white-card');
+    // 白いカードのエッジを滑らかにするための追加設定
+    whiteSvg = whiteSvg.replace(
+      /<svg([^>]*)>/,
+      (match, attrs) => {
+        // image-renderingをautoに設定（ギザギザを防ぐ）
+        if (!attrs.includes('image-rendering')) {
+          attrs += ' image-rendering="auto"';
+        } else {
+          attrs = attrs.replace(/image-rendering="[^"]*"/, 'image-rendering="auto"');
+        }
+        // shape-renderingをautoに設定（より滑らかなエッジ）
+        if (!attrs.includes('shape-rendering')) {
+          attrs += ' shape-rendering="auto"';
+        } else {
+          attrs = attrs.replace(/shape-rendering="[^"]*"/, 'shape-rendering="auto"');
+        }
+        return `<svg${attrs}>`;
+      }
+    );
+    whiteCardSvg.value = whiteSvg;
   } catch (error) {
     console.error('Failed to load SVG files:', error);
   }
@@ -133,7 +185,7 @@ onMounted(async () => {
           <!-- Mobile Card Section - Only visible on mobile -->
           <div class="lg:hidden mb-4">
             <div class="relative flex justify-center">
-              <div class="relative w-64 sm:w-72 pb-8">
+              <div class="relative w-64 sm:w-72 pb-8 mobile-card-container">
                 <!-- Glow effect -->
                 <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-teal-500/15 rounded-2xl blur-2xl" />
 
@@ -141,13 +193,13 @@ onMounted(async () => {
                 <div class="relative mb-4">
                   <!-- White card (back) -->
                   <div
-                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60"
+                    class="absolute top-3 left-3 w-full transform rotate-4 opacity-60 white-card-container"
                     v-if="whiteCardSvg"
                     v-html="whiteCardSvg"
                   />
 
                   <!-- Gray card (front) -->
-                  <div class="relative w-full z-10" v-if="grayCardSvg" v-html="grayCardSvg" />
+                  <div class="relative w-full z-10 gray-card-container" v-if="grayCardSvg" v-html="grayCardSvg" />
                 </div>
 
                 <!-- Balance info below cards -->
@@ -276,7 +328,7 @@ onMounted(async () => {
             <div class="relative mb-8">
               <!-- White card (back) -->
               <div
-                class="absolute top-6 left-6 w-full transform rotate-6 opacity-70"
+                class="absolute top-6 left-6 w-full transform rotate-6 opacity-70 white-card-container"
                 v-if="whiteCardSvg"
                 v-html="whiteCardSvg"
               />
@@ -318,7 +370,7 @@ onMounted(async () => {
   shape-rendering: geometricPrecision;
   text-rendering: optimizeLegibility;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  image-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   will-change: transform;
@@ -329,5 +381,81 @@ onMounted(async () => {
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
+}
+
+/* SVG内の<image>要素の高品質レンダリング（PNG画像の品質向上） */
+:deep(svg image) {
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  /* モバイルでも高品質レンダリングを確保 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* GPUアクセラレーション */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* SVG内の<pattern>要素の最適化 */
+:deep(svg pattern) {
+  image-rendering: auto;
+  shape-rendering: geometricPrecision;
+}
+
+/* モバイル版カードコンテナの最適化 */
+.mobile-card-container :deep(svg) {
+  /* モバイルでもデスクトップと同じ高品質レンダリングを確保 */
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  shape-rendering: geometricPrecision !important;
+  /* アンチエイリアシング強化 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* GPUアクセラレーション */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* モバイル版グレーカードコンテナの最適化 */
+.mobile-card-container .gray-card-container :deep(svg) {
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  shape-rendering: geometricPrecision !important;
+}
+
+/* モバイル版の<image>要素の最適化 */
+.mobile-card-container :deep(svg image) {
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  /* 高品質レンダリングを優先 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* 白いカード専用のレンダリング設定（ギザギザを防ぐ） */
+.white-card-container :deep(svg) {
+  /* エッジを滑らかにするためのレンダリング設定 */
+  image-rendering: auto !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  shape-rendering: auto !important;
+  /* エッジのアンチエイリアシングを強化 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* GPUアクセラレーション（回転は親要素で適用されるため、ここではtranslateZのみ） */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  /* サブピクセルレンダリングを有効化 */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* エッジの滑らかさを向上（微細なブラー効果） */
+  filter: contrast(1) brightness(1);
+  -webkit-filter: contrast(1) brightness(1);
 }
 </style>
