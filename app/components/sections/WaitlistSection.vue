@@ -57,13 +57,13 @@ const handleSubmit = async () => {
         </p>
 
         <form class="max-w-md mx-auto" @submit.prevent="handleSubmit">
-          <div class="flex flex-col sm:flex-row gap-3">
+          <div class="flex flex-col sm:flex-row gap-3 items-center">
             <UInput
               v-model="email"
               type="email"
               :placeholder="t('waitlist.placeholder')"
               size="xl"
-              class="flex-1"
+              class="w-full sm:flex-1"
               :disabled="isLoading || status === 'success'"
               required
             />
@@ -71,6 +71,7 @@ const handleSubmit = async () => {
               type="submit"
               color="primary"
               size="xl"
+              class="w-auto shrink-0 px-8"
               :loading="isLoading"
               :disabled="status === 'success'"
             >
