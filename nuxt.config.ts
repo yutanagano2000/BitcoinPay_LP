@@ -109,9 +109,10 @@ export default defineNuxtConfig({
   // ルートレンダリング最適化
   routeRules: {
     // 静的ページはプリレンダリング
+    // 注意: strategy: 'prefix_except_default' では、デフォルトロケール(en)は '/' でアクセス
+    // '/en' は存在しないため、プリレンダリング対象から除外
     '/': { prerender: true },
     '/ja': { prerender: true },
-    '/en': { prerender: true },
   },
 
   colorMode: {
